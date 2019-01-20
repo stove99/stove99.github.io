@@ -1890,6 +1890,12 @@ ul.clear-list:first-child {
 .article-title {
   text-align: center;
   margin: 40px 0 100px;
+
+  h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 500;
+  }
 }
 
 .article .ibox-content {
