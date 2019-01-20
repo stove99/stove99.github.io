@@ -10,7 +10,7 @@ icon: icon-docker
 
 # 이미지 가져오기 및 실행하기
 http 는 8181 포트로 https 는 8182 포트로 ssh 접속은 8183 포트로 설정
-> --publish 8181:80 --publish 8182:443 --publish 8183:22
+> `--publish 8181:80 --publish 8182:443 --publish 8183:22`
 
 생성되는 데이터는 /srv/gitlab 으로 지정해서 데이터 유지되게 함
 > `--volume /srv/gitlab/config:/etc/gitlab`
@@ -76,10 +76,12 @@ sudo docker restart gitlab
 
 이곳에서 설정하는 정보에 따라 프로젝트 clone url 이 바뀜
 
-1. 외부 URL
-    external_url "http://gitlab.example.com:8929"
-2. SSH 접속 포트
-    gitlab_rails['gitlab_shell_ssh_port'] = XXX
+|-----------------+------------|
+| 설정            |             |
+|-----------------|:-----------|
+| 외부 URL        | external_url : "http://gitlab.example.com:8929" |
+| SSH 접속 포트   | gitlab_rails['gitlab_shell_ssh_port'] = XXX     |
+
 
 
 
