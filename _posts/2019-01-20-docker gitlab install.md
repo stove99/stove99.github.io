@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "Docker 로 Gitlab 설치하기"
+date:   2019-01-20
+keywords: "docker,gitlab"
+categories: [Docker]
+tags: [docker,gitlab]
+icon: icon-docker
+---
+
+이미지 가져오기 및 실행하기
+==============
+``` bash
+sudo docker run  \
+    --detach \
+    --hostname stove99.github.io \
+    --publish 8181:80 --publish 8182:443 --publish 8183:22 \
+    --name gitlab \
+    --restart always \
+    --volume /srv/gitlab/config:/etc/gitlab \
+    --volume /srv/gitlab/logs:/var/log/gitlab \
+    --volume /srv/gitlab/data:/var/opt/gitlab \
+    gitlab/gitlab-ce:latest
+```
+
+> --publish 8181:80 --publish 8182:443 --publish 8183:22
+http 는 8181 포트로 https 는 8182 포트로 ssh 접속은 8183 포트로 설정
+
+> --volume /srv/gitlab/config:/etc/gitlab
+> --volume /srv/gitlab/logs:/var/log/gitlab
+> --volume /srv/gitlab/data:/var/opt/gitlab
+
+생성되는 데이터는 /srv/gitlab 으로 지정해서 데이터 유지되게 함
+
+
+컨테이너에 접속하기
+==============
+``` bash
+sudo docker exec -it gitlab /bin/bash
+```
+
+Gitlab 설정하기 방법1
+==============
+``` bash
+# 컨테이너로 접속
+sudo docker exec -it gitlab /bin/bash
+
+# 설정파일 편집
+vi /etc/gitlab/gitlab.rb
+
+# Gitlab 재시작
+gitlab-ctl reconfigure
+gitlab-ctl restart
+```
+
+Gitlab 설정하기 방법2
+==============
+``` bash
+# 설정파일 편집
+sudo docker exec -it gitlab vi /etc/gitlab/gitlab.rb
+
+# Gitlab 재시작
+sudo docker restart gitlab
+```
+
+gitlab.rb 에서 변경할만한 부분
+==============
+
+1. 외부 URL
+    external_url "http://gitlab.example.com:8929"
+2. SSH 접속 포트
+    gitlab_rails['gitlab_shell_ssh_port'] = XXX
+
+
+Gitlab 업데이트 하기
+==============
+``` bash
+# 정지후 이미지 삭제 > 최신버전 받기
+sudo docker stop gitlab
+sudo docker rm gitlab
+sudo docker pull gitlab/gitlab-ce:latest
+
+# 컨테이너 다시 생성
+sudo docker run  \
+    --detach \
+    --hostname stove99.github.io \
+    --publish 8181:80 --publish 8182:443 --publish 8183:22 \
+    --name gitlab \
+    --restart always \
+    --volume /srv/gitlab/config:/etc/gitlab \
+    --volume /srv/gitlab/logs:/var/log/gitlab \
+    --volume /srv/gitlab/data:/var/opt/gitlab \
+    gitlab/gitlab-ce:latest
+```
