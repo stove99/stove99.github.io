@@ -14,7 +14,9 @@ http 는 8181 포트로 https 는 8182 포트로 ssh 접속은 8183 포트로 �
 
 생성되는 데이터는 /srv/gitlab 으로 지정해서 데이터 유지되게 함
 > --volume /srv/gitlab/config:/etc/gitlab
+>
 > --volume /srv/gitlab/logs:/var/log/gitlab
+>
 > --volume /srv/gitlab/data:/var/opt/gitlab
 
 ``` bash
