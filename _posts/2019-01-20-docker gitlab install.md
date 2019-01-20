@@ -30,6 +30,13 @@ sudo docker run  \
     gitlab/gitlab-ce:latest
 ```
 
+요렇게 실행한 다음 브라우져에 http://127.0.0.1:8181 로 접속되면 된다.
+
+※ 처음 실행할때 실행 시간이 쫌 걸리는데 sudo docker ps gitlab 명령으로 서버가 다 올라갔는지 알 수 있다.
+
+
+
+
 # Gitlab 설정하기 방법1
 docker exec 로 컨테이너 쉘로 접속해 직접 이것저것 작업하고 gitlab-ctl 로 재시작하기
 
@@ -45,6 +52,9 @@ gitlab-ctl reconfigure
 gitlab-ctl restart
 ```
 
+
+
+
 # Gitlab 설정하기 방법2
 docker exec 로 컨테이너 vi 로 직접 편집하기
 
@@ -56,6 +66,9 @@ sudo docker exec -it gitlab vi /etc/gitlab/gitlab.rb
 sudo docker restart gitlab
 ```
 
+
+
+
 # gitlab.rb 에서 변경할만한 부분
 별로 수정할건 딱히 없지만 외부 URL 설정과 SSH 접속포트 설정정보는 바꿀 경우가 많을것 같다.
 
@@ -65,6 +78,9 @@ sudo docker restart gitlab
     external_url "http://gitlab.example.com:8929"
 2. SSH 접속 포트
     gitlab_rails['gitlab_shell_ssh_port'] = XXX
+
+
+
 
 
 # Gitlab 업데이트 하기
