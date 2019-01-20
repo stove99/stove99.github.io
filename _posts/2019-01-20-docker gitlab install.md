@@ -76,25 +76,10 @@ sudo docker restart gitlab
 
 이곳에서 설정하는 정보에 따라 프로젝트 clone url 이 바뀜
 
-|-----------------+------------+-----------------+----------------|
-| Default aligned |Left aligned| Center aligned  | Right aligned  |
-|-----------------|:-----------|:---------------:|---------------:|
-| First body part |Second cell | Third cell      | fourth cell    |
-| Second line     |foo         | **strong**      | baz            |
-| Third line      |quux        | baz             | bar            |
-|-----------------+------------+-----------------+----------------|
-| Second body     |            |                 |                |
-| 2 line          |            |                 |                |
-|=================+============+=================+================|
-| Footer row      |            |                 |                |
-|-----------------+------------+-----------------+----------------|
-
-|-----------------|------------|
-| 설정            |             |
-|-----------------|:-----------|
-| 외부 URL        | external_url : "http://gitlab.example.com:8929" |
-| SSH 접속 포트   | gitlab_rails['gitlab_shell_ssh_port'] = XXX     |
-
+1. 외부 URL
+    > external_url : "http://gitlab.example.com:8929"
+2. SSH 접속 포트
+    > gitlab_rails['gitlab_shell_ssh_port'] = XXX
 
 
 
