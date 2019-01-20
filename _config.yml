@@ -25,10 +25,8 @@ author:  # change following line to your infomation.
   skill_icon1:
     - name: icon-maven
     - name: icon-docker
-    - name: icon-java-bold
   skill_icon2:
-    - name: icon-javascript
-    - name: icon-jquery
+    - name: icon-java-bold
     - name: icon-spring
   desc: 하이염~~  # Describe yourself.
 
