@@ -1,8 +1,8 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: 스토브 훌로구
-description: 스토브 훌로구에요
+title: 슷호브 훌로구
+description: 슷호브 훌로구에요
 keywords: 슷호브,스토브
 baseurl:  /
 url: https://stove99.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
@@ -11,9 +11,9 @@ img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: 스토브  # Be used at blog posts' author.
-  first_name: Hub  # Be used at index page about me section.
-  last_name: Git  # Be used at index page about me section.
+  name: 슷호브  # Be used at blog posts' author.
+  first_name: 슷호브  # Be used at index page about me section.
+  last_name:   # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
   github_username: stove99  # Leave blank if you don't have now
   linkedin_id:  # Leave blank if you don't have now
@@ -23,11 +23,13 @@ author:  # change following line to your infomation.
   cv:   # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
-    - name: icon-apache
-    - name: fa-linux
+    - name: icon-maven
+    - name: icon-docker
+    - name: icon-java-bold
   skill_icon2:
-    - name: fa-linux
-    - name: icon-apache
+    - name: icon-javascript
+    - name: icon-jquery
+    - name: icon-spring
   desc: 하이염~~  # Describe yourself.
 
 # comment

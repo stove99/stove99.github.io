@@ -6,12 +6,6 @@
   tpl: about.html
   css:
 
-- id: skills
-  i18n: nav.skills
-  name: Skills
-  tpl: skills.html
-  css: team
-
 - id: blog
   i18n: nav.blog
   name: Blog
