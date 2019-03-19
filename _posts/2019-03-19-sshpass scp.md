@@ -5,7 +5,7 @@ date:   2019-03-19
 keywords: "sshpass,scp"
 categories: [Linux]
 tags: [sshpass,scp]
-icon: icon-docker
+icon: icon-ubuntu
 ---
 
 # 이미지 가져오기 및 실행하기
