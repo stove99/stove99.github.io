@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Javascript 팁"
+title:  "Javascript 여러가지 유용한 문구들"
 date:   2019-04-15
 keywords: "javascript"
 categories: [Javascript]
