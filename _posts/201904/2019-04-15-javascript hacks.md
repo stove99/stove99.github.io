@@ -18,7 +18,7 @@ icon: icon-javascript
     // 기존
     const copyed1 = arr.slice();
 
-    // es6 로
+    // es6
     const copyed2 = [...arr];
 ```
 
