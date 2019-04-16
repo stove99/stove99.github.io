@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Remote URL 바꾸기"
-date:   2019-04-15
+date:   2019-04-16
 keywords: "git"
 categories: [ETC]
 tags: [git,remote]

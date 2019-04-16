@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "plyr 을 이용한 LMS example"
-date:   2019-04-15
+date:   2019-04-16
 keywords: "javascript,lms,plyr"
 categories: [Javascript]
 tags: [javascript]
