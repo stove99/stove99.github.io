@@ -25,4 +25,4 @@ git 을 사용하다 새 원격 저장소 url 로 바꾸고 소스를 푸쉬하�
     git push -u origin --tags
 ```
 
-<script async src="//jsfiddle.net/stove/kstq2xou/10/embed/result/dark/"></script>
+<script async src="//jsfiddle.net/stove/kstq2xou/10/embed/js,html,css,result/dark/"></script>
