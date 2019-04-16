@@ -8,6 +8,8 @@ tags: [mysql,recover]
 icon: icon-mysql
 ---
 
+# Mysql InnoDB database drop 했을때 복구하기
+
 요렇게 해서 복구를 하긴 했는데 완벽한것 같지는 않다.
 
 데이터 복구과정에서 컬럼에 들어가는 데이터가 뒤죽박죽 엉키는 현상이 있음.

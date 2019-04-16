@@ -8,8 +8,6 @@ tags: [javascript]
 icon: icon-javascript
 ---
 
-# Javascript 여러가지 유용한 문구들
-
 ## 배열 복사하기
 
 ``` javascript

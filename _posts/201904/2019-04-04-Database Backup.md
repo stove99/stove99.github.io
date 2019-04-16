@@ -8,9 +8,10 @@ tags: [mysql,oracle,backup,crontab]
 icon: icon-mysql
 ---
 
+## 백업을 수행할 shell script 작성
 
-# 백업을 수행할 shell script 작성
 Mysql 용 백업 스크립트는 대충 요렇게 맹글어 본다.
+
 ``` bash
     mkdir ~/cron
     vi ~/cron/mysql_backup.sh
@@ -29,6 +30,7 @@ Mysql 용 백업 스크립트는 대충 요렇게 맹글어 본다.
 ```
 
 oracle 용 백업스크립트는 요렇게.. exp 라는 걸 활용하면 되는데 오라클 설치할때 같이 설치됨
+
 ``` bash
     mkdir ~/cron
     vi ~/cron/oracle_backup.sh
@@ -46,8 +48,8 @@ oracle 용 백업스크립트는 요렇게.. exp 라는 걸 활용하면 되는�
     chmod u+x ~/oracle_backup.sh
 ```
 
-
 exp 를 실행해 보면 ORACLE_HOME 설정하라 그러면서 실행이 안되는 경우가 있는데 고럴땐 ORACLE_HOME, ORACLE_SID 를 환경변수에 등록해 주면 된다.
+
 ``` bash
     vi ~/.bash_profile
 
@@ -61,14 +63,16 @@ exp 를 실행해 보면 ORACLE_HOME 설정하라 그러면서 실행이 안되�
     source ~/.bash_profile
 ```
 
-# 스크립트 테스트
+## 스크립트 테스트
+
 ``` bash
     ~/cron/mysql_backup.sh
 ```
+
 실행해서 정상적으로 백업파일이 생성되는지 확인해 본다.
 
+## crontab 에 등록해서 주기적으로 백업받기
 
-# crontab 에 등록해서 주기적으로 백업받기
 ``` bash
     crontab -e
 
