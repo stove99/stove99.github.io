@@ -12,8 +12,8 @@
 - name: Linux
   href: /linux/
 
-- name: ETC
-  href: /etc/
+- name: Else
+  href: /else/
 
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
