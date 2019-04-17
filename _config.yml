@@ -1,70 +1,44 @@
-# Welcome to Jekyll!
+# Site/SEO settings
+email: stove99@gmail.com
+permalink: /:year/:month/:day/:title/
+google_analytics: UA-132745802-1
 
-# Website settings
 title: 슷호브 훌로구
-description: 슷호브 훌로구에요
-keywords: 슷호브,스토브
-baseurl:  /
-url: https://stove99.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
-# url: http://127.0.0.1:4000
-img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+description: 
+url: "https://stove99.github.io"
+baseurl: ""
+twitter_username: 
+default_img: 
 
-# author -- index page "about me" section
-author:  # change following line to your infomation.
-  name: 슷호브  # Be used at blog posts' author.
-  first_name: 슷호브  # Be used at index page about me section.
-  last_name:   # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username: stove99  # Leave blank if you don't have now
-  linkedin_id:  # Leave blank if you don't have now
-  facebook_username:   # Leave blank if you don't have now
-  twitter_username:   # Leave blank if you don't have now
-  email:   # Leave blank if you don't have now
-  cv:   # An online CV can be printed as PDF, leave blank if you don't have now
-  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
-  skill_icon1:
-    - name: icon-maven
-    - name: icon-docker
-  skill_icon2:
-    - name: icon-java-bold
-    - name: icon-spring
-  desc: 하이염~~  # Describe yourself.
-
-# comment
-disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: stove99
-
-# analytics
-## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  id: UA-132745802-1
-
-## google optimize
-go:
-  # id:
-
-## growingIO
-gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
-  # id:
-
-## donation
-donation: off  # type 'on'/'off' to choice display donation button at post page or not
-
-## carousels
-index_carousel: on  # index page carousel switch
-blog_carousel: on  # blog page carousel switch
-
-# scss
-sass:
-  style: compressed
+# Profile settings
+name: 슷호브
+profile_img: /static/assets/img/avatar.jpg
+profile: 
+social:
+  github: https://github.com/stove99/
 
 # Build settings
-encoding: utf-8
-
-# other settings
-highlighter: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - octopress-autoprefixer
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - _screenshots
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
 
+# Pagination
+paginate: 5
+paginate_path: "/blog/page-:num"
+
+# Sass
+sass:
+  style: compressed

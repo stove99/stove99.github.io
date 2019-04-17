@@ -6,6 +6,8 @@ keywords: "javascript,lms,plyr"
 categories: [Javascript]
 tags: [javascript]
 icon: icon-javascript
+image: https://picsum.photos/2000/1200?image=1003
+image-sm: https://picsum.photos/500/300?image=1003
 ---
 
 ## LMS 란
