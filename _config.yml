@@ -32,6 +32,7 @@ compress_html:
   clippings: all
   comments: all
   startings: [html, head, body]
+
 exclude:
   - _screenshots
   - .DS_Store
@@ -47,3 +48,4 @@ paginate_path: "/blog/page-:num"
 # Sass
 sass:
   style: compressed
+  cache: false

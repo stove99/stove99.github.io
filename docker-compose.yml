@@ -2,9 +2,9 @@ version: '3'
 services: 
   site:
     container_name: my_blog
-    command: jekyll serve --watch
+    command: jekyll serve --watch --destination /home/jekyll/dist
     image: jekyll/jekyll
     volumes: 
-      - $PWD:/srv/jekyll
+      - .:/srv/jekyll
     ports: 
       - 4000:4000

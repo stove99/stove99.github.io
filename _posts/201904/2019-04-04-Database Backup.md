@@ -19,13 +19,12 @@ mkdir ~/cron
 vi ~/cron/mysql_backup.sh
 
 # mysql_backup.sh 내용
-#######################################################################################
 # 요렇게 하면 /home/BACKUP/db_오늘날짜.sql 로 백업이된다.
 /usr/bin/mysqldump -uroot -p비밀번호 백업할db명 > /home/BACKUP/db_`date +%Y%m%d`.sql
 
 # 5일까지꺼만 백업파일 유지되게
 /usr/bin/find /home/BACKUP/* -mtime +5 -exec rm -rf {} \;
-#######################################################################################
+# mysql_backup.sh 끝
 
 # script 실행권한 추가
 chmod u+x ~/mysql_backup.sh
@@ -39,12 +38,11 @@ vi ~/cron/oracle_backup.sh
 
 # oracle_backup.sh 내용
 # oracle 설치경로에 맞춰서 알아서 바꾸길..
-#######################################################################################
 /oracle/app/oracle/product/11.2.0/db/bin/exp 계정명/비밀번호 file=/home/BACKUP/db_`date +%Y%m%d`.dmp log=/home/BACKUP/backup.log
 
 # 5일까지꺼만 백업파일 유지되게
 /usr/bin/find /home/BACKUP/* -mtime +5 -exec rm -rf {} \;
-#######################################################################################
+# oracle_backup.sh 끝
 
 # script 실행권한 추가
 chmod u+x ~/oracle_backup.sh
@@ -55,11 +53,9 @@ exp 를 실행해 보면 ORACLE_HOME 설정하라 그러면서 실행이 안되�
 ``` bash
 vi ~/.bash_profile
 
-# .bash_profile 에 환경변수 추가
-#######################################################################################
+# .bash_profile 끝에 환경변수 두개 추가
 export ORACLE_HOME=/oracle/app/oracle/product/11.2.0/db
 export ORACLE_SID=SID 명 또는 Service Name
-#######################################################################################
 
 # 적용
 source ~/.bash_profile
