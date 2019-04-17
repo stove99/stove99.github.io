@@ -3,7 +3,7 @@ layout: post
 title:  "Git Remote URL 바꾸기"
 date:   2019-04-16
 keywords: "git"
-categories: [Else]
+categories: [ETC]
 tags: [git,remote]
 icon: icon-git
 image: https://picsum.photos/2000/1200?image=718
