@@ -399,6 +399,10 @@
     margin-top: 50px;
   }
 
+  code, kbd, pre, samp {
+    font-family: $font-post;
+  }
+
   ol, ul {
     margin-bottom: 1em;
     margin-left: 1em;
