@@ -102,5 +102,7 @@ var rellax = new Rellax('.rellax');
 document.addEventListener('DOMContentLoaded', function() {
   Tabs.init();
   Preview.init();
-  //wow.init();
+  wow.init();
+
+  hljs.initHighlightingOnLoad();
 });

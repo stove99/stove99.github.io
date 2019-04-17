@@ -6,8 +6,8 @@ keywords: "docker,gitlab"
 categories: [Docker]
 tags: [docker,gitlab]
 icon: icon-docker
-image: https://picsum.photos/2000/1200?random
-image-sm: https://picsum.photos/500/300?random
+image: https://picsum.photos/2000/1200?image=924
+image-sm: https://picsum.photos/500/300?image=924
 ---
 
 ## 이미지 가져오기 및 실행하기
