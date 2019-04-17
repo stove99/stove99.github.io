@@ -46,6 +46,14 @@ services:
 docker-compose up
 ```
 
+### 로컬서버 종료
+
+ctrl + c 로 종료하면 되는데 예외 상황이 발생해서 서버가 계속 떠 있다면 당황하지 말고 요렇게 종료 시키면 된다.
+
+``` bash
+docker rm my_blog
+```
+
 ## 결론
 
 docker 가 이미 설치되 있다면 docker-compose.yml 파일만 만들어서 docker-compose up 만 하면 순식간에 로컬에다 훌로구를 띄울 수 있다.
