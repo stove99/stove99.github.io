@@ -6,13 +6,13 @@ google_analytics: UA-132745802-1
 title: 슷호브 훌로구
 description: 
 url: "https://stove99.github.io"
-baseurl: ""
+baseurl: "/"
 twitter_username: 
 default_img: 
 
 # Profile settings
 name: 슷호브
-profile_img: /static/assets/img/avatar.jpg
+profile_img: /assets/img/avatar.jpg
 profile: 
 social:
   github: https://github.com/stove99/
