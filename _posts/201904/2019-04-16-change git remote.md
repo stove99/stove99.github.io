@@ -6,6 +6,8 @@ keywords: "git"
 categories: [Else]
 tags: [git,remote]
 icon: icon-git
+image: https://picsum.photos/2000/1200?random
+image-sm: https://picsum.photos/500/300?random
 ---
 
 git 을 사용하다 새 원격 저장소 url 로 바꾸고 소스를 푸쉬하려고 할땐 요렇게

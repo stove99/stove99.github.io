@@ -6,6 +6,8 @@ keywords: "javascript"
 categories: [Javascript]
 tags: [javascript]
 icon: icon-javascript
+image: https://picsum.photos/2000/1200?random
+image-sm: https://picsum.photos/500/300?random
 ---
 
 ## 배열 복사하기

@@ -6,6 +6,8 @@ keywords: "mysql,recover,drop"
 categories: [Linux]
 tags: [mysql,recover]
 icon: icon-mysql
+image: https://picsum.photos/2000/1200?random
+image-sm: https://picsum.photos/500/300?random
 ---
 
 요렇게 해서 복구를 하긴 했는데 완벽한것 같지는 않다.

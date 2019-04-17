@@ -6,6 +6,8 @@ keywords: "javascript,jquery,modal"
 categories: [Javascript]
 tags: [javascript,jquery,modal]
 icon: icon-jquery
+image: https://picsum.photos/2000/1200?random
+image-sm: https://picsum.photos/500/300?random
 ---
 
 ## 소개
@@ -75,12 +77,12 @@ icon: icon-jquery
 사용하기 위해서 jquery, jquery.modal.js, jquery.modal.css, animate.min.css 이 필요하다.
 
 ``` html
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/css/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/css/jquery.modal.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/css/animate.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/css/jquery.modal.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/js/jquery.modal.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/js/jquery.modal.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/js/modal.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/stove99/jquery-modal-sample@v1.4/js/modal.js"></script>
 ```
 
 ## 샘플
