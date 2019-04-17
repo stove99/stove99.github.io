@@ -384,14 +384,10 @@
  */
 .post {
   width: 90%;
-  max-width: $mq-md;
+  max-width: 80em;
   margin: 0 auto;
 
   font-family: $font-post;
-
-  @media (min-width: $mq-md) {
-    width: 55%;
-  }
 
   & > *:last-child {
     margin-bottom: 0;
@@ -400,6 +396,7 @@
   h1, 
   h2 {
     line-height: 1.2;
+    margin-top: 50px;
   }
 
   ol, ul {
