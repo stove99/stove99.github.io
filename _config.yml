@@ -10,6 +10,10 @@ baseurl: "/"
 twitter_username: 
 default_img: 
 
+# comment
+disqus: 
+  name: stove99
+
 # Profile settings
 name: 슷호브
 profile_img: /assets/img/avatar.jpg
