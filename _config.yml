@@ -2,9 +2,10 @@
 email: stove99@gmail.com
 permalink: /:year/:month/:day/:title/
 google_analytics: UA-132745802-1
+timezone: Asia/Seoul
 
 title: 슷호브 훌로구
-description: 
+description: 슷호브 훌로구에요
 url: "https://stove99.github.io"
 baseurl: ""
 twitter_username: 
@@ -40,7 +41,7 @@ exclude:
   - README.md
 
 # Pagination
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page-:num"
 
 # Sass
