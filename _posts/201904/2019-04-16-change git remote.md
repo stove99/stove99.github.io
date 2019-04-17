@@ -6,8 +6,8 @@ keywords: "git"
 categories: [ETC]
 tags: [git,remote]
 icon: icon-git
-image: https://picsum.photos/2000/1200?image=718
-image-sm: https://picsum.photos/500/300?image=718
+image: https://picsum.photos/2000/1200?image=10
+image-sm: https://picsum.photos/500/300?image=10
 ---
 
 git 을 사용하다 새 원격 저장소 url 로 바꾸고 소스를 푸쉬하려고 할땐 요렇게

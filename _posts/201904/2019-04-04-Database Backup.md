@@ -6,8 +6,8 @@ keywords: "mysql,oracle,backup,crontab"
 categories: [Linux]
 tags: [mysql,oracle,backup,crontab]
 icon: icon-mysql
-image: https://picsum.photos/2000/1200?image=875
-image-sm: https://picsum.photos/500/300?image=875
+image: https://picsum.photos/2000/1200?image=3
+image-sm: https://picsum.photos/500/300?image=3
 ---
 
 ## 백업을 수행할 shell script 작성
