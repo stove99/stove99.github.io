@@ -410,6 +410,10 @@
     vertical-align: baseline;
 
     margin-bottom: 15px;
+
+    @media (min-width: $mq-xs) {
+      margin-top: 1.5em;
+    }
   }
 
   code, kbd, pre, samp {
