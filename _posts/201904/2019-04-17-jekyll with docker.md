@@ -10,11 +10,11 @@ image: https://picsum.photos/2000/1200?image=2
 image-sm: https://picsum.photos/500/300?image=2
 ---
 
-Github 페이지로 훌로구 활동을 하면서 뭐 하나 살짝 수정하고 쪽바로 바뀌는지 확인하기 위해 커밋하고 푸쉬하고 잠시 시간이 흐른 후에 훌로구를 리프레쉬 하는 흑우짖을 해왔었다.
+Github 페이지로 훌로구 활동을 하면서 뭐 하나 살짝 수정하고 쪽바로 바뀌는지 확인하기 위해 커밋하고 푸쉬하고 잠시 시간이 흐른 후 훌로구를 리프레쉬 하는 흑우짖을 해왔었다.
 
-그렇게 하다 보니 매우 빠른 속도로 증가하는 Commit 수도 문제였고 바로바로 확인이 안되서 이것저것 불편한 점이 많았다.
+그렇게 하다 보니 매우 빠른 속도로 증가하는 Commit 수도 문제였고 바로바로 확인이 안 되서 이것저것 불편한 점이 많았다.
 
-그러다 문득 docker 로 로컬서버 띄우면 아주 깔꼼하게 모든 문제가 해결될것 같다는 생각을 하게 되었다.
+그러다 문득 docker 로 로컬서버를 구동하면 아주 깔꼼하게 모든 문제가 해결될 것 같다는 생각을 하게 되었다.
 
 ## 적용방법
 
@@ -46,7 +46,7 @@ docker-compose up
 
 ## 로컬서버 종료
 
-ctrl + c 로 종료하면 되는데 예외 상황이 발생해서 서버가 계속 떠 있다면 당황하지 말고 요렇게 종료 시키면 된다.
+ctrl + c 로 종료하면 되는데 예외 상황이 발생해서 서버가 계속 구동되 있다면 당황하지 말고 요렇게 종료 시키면 된다.
 
 ``` bash
 docker rm my_blog
@@ -67,10 +67,10 @@ Winodws Docker 는 Shared Drive 설정을 해 줘야 한다. 그리고 파일 �
 파일 변경하면 docker jekyll 을 껏다 켯다 하는 불편함이 있다. 뭐 이렇게 껏다 켰다 하면서 해도 되고 불편하면 [docker-windows-volume-watcher](https://github.com/hnakamur/docker-windows-volume-watcher/releases) 라는 후로그램을 실행시켜 놓고 써도 된다.
 
 1. Docker Windows Volume Watcher
-- [다운로드](https://github.com/hnakamur/docker-windows-volume-watcher/releases)
-- 다운로드 받은 docker-windows-volume-watcher.exe 파일을 PATH 가 설정된 디렉토리(ex)c:\windows)에 복사한다.
-- 현재 프로젝트 최상위 디렉토리에서 docker-windows-volume-watcher 를 실행한다.
-- docker-windows-volume-watcher -ignoredir .git
+ - [다운로드](https://github.com/hnakamur/docker-windows-volume-watcher/releases)
+ - 다운로드 받은 docker-windows-volume-watcher.exe 파일을 PATH 가 설정된 디렉토리(ex)c:\windows)에 복사한다.
+ - 현재 프로젝트 최상위 디렉토리에서 docker-windows-volume-watcher 를 실행한다.
+ - docker-windows-volume-watcher -ignoredir .git
 2. Shared Drive 설정
 
 <img src="/assets/attach/201904/windows-docker-setting.png" alt="drawing" style="max-width:700px;"/>

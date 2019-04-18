@@ -1,11 +1,12 @@
 /**
  * Base Variables
  */
-$font-header: 'Space Mono', monospace;
-$font-body: 'IBM Plex Mono', monospace;
-$font-post: 'IBM Plex Mono', monospace;
+$font-header: 'NanumSquare', sans-serif;
+$font-body: 'NanumSquare', sans-serif;
+$font-post: 'NanumSquare', sans-serif;
+$font-code: 'IBM Plex Mono', monospace;;
 
-$color-alpha: #9f8f68;
+$color-alpha: #222222;
 $color-alpha--light: #f5f3ef;
 
 $color-black: #0a0a0a;
@@ -77,13 +78,8 @@ h1 {
 }
 
 h2 {
-  color: #E94E1B;
   margin-top: 1em;
   margin-bottom: 0.25em;
-
-  line-height: 1.2em;
-  padding-bottom: .3em;
-  border-bottom: 2px solid #dbdbdb;
 
   font-size: 1.75em;
 

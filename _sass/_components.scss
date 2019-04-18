@@ -33,7 +33,7 @@
     }
 
     &.active {
-      border-bottom: 3px solid $color-alpha;
+      border-bottom: 3px solid #DD4C39;
     }
   }
 }
@@ -86,7 +86,7 @@
     background-color: $color-alpha--light;
 
     .preview__more {
-      box-shadow: inset 175px 0 0 0 $color-alpha;
+      box-shadow: inset 175px 0 0 0 #DD4C39;
       color: $color-white;
     }
   }
@@ -400,11 +400,20 @@
   }
 
   h2, h3, h4, h5, h6 {
-    font-family: 'Noto Serif KR', serif;
+    color: #222222;
+  }
+
+  h2 {
+    border-left: 5px #DD4C39 solid;
+    padding-left: 10px;
+    font-weight: 700;
+    vertical-align: baseline;
+
+    margin-bottom: 15px;
   }
 
   code, kbd, pre, samp {
-    font-family: $font-post;
+    font-family: $font-code;
   }
 
   ol, ul {
@@ -438,11 +447,11 @@
 
   a {
     font-weight: 500;
-    color: #E94E1B;
+    color: #DD4C39;
   }
 
   a:hover {
-    border-bottom: 1px solid #E94E1B;
+    color: #222222;
   }
 
   img {
