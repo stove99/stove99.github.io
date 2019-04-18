@@ -27,14 +27,14 @@ Github 페이지로 훌로구 활동을 하면서 뭐 하나 살짝 수정하고
 
 ``` yaml
 version: '3'
-services: 
+services:
   site:
     container_name: my_blog
     command: jekyll serve --watch --destination /home/jekyll/dist
     image: jekyll/jekyll
-    volumes: 
+    volumes:
       - .:/srv/jekyll
-    ports: 
+    ports:
       - 4000:4000
 ```
 
