@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "특정 날짜 까지만 팝업창 뜨게 하기"
-date:   2019-04-17
+date:   2019-04-18
 keywords: "javascript"
 categories: [Javascript]
 image: https://picsum.photos/2000/1200?image=15
@@ -115,7 +115,7 @@ for( var i=0, size=popup.length; i<size; i++ ){
 }
 ```
 
-- jQuery 도 맨들어봄
+- jQuery 버전으로도 맨들어봄
 
 ```javascript
 var today = new Date();

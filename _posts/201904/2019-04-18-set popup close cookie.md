@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "팝업창 오늘하루 그만보기 만들기"
-date:   2019-04-17
+date:   2019-04-18
 keywords: "javascript,cookie"
 categories: [Javascript]
 image: https://picsum.photos/2000/1200?image=11
@@ -240,7 +240,7 @@ layerPopup('popup_test1', '10px', '10px', '300px', '500px');
 layerPopup('popup_test2', '10px', '320px', '600px', '300px');
 ```
 
-## jQuery 로 맨들때는 요렇게 맨들 수 있다
+## jQuery 버전으로 맨들때는 요렇게 맨들 수 있다
 
 ```javascript
 $(document).ready(function(){
