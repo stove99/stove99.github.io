@@ -3,7 +3,7 @@ layout: post
 title:  "jQuery Modal Plugin 팝업창 띄우기 예제"
 date:   2019-04-16
 keywords: "javascript,jquery,modal"
-categories: [Javascript]
+categories: [Javascript,jQuery]
 tags: [javascript,jquery,modal]
 icon: icon-jquery
 image: https://picsum.photos/2000/1200?image=1011

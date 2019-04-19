@@ -2,8 +2,8 @@
 layout: post
 title:  "Javascript 로 페이지 딱 중앙에다 모달창을 띄어보자"
 date:   2019-04-19
-keywords: "javascript"
-categories: [Javascript]
+keywords: "javascript,jquery"
+categories: [Javascript,jQuery]
 image: https://picsum.photos/2000/1200?image=16
 image-sm: https://picsum.photos/500/300?image=16
 ---
