@@ -48,6 +48,8 @@ Javascript 와 CSS 를 이용해서 깨작깨작 한번 맹글어 보았다. 무
         <a class="modal_close_btn">닫기</a>
     </div>
 
+    <button id="popup_open_btn">팝업창 띄어 줘염</button>
+
     <script>
         function modal(id) {
             var zIndex = 9999;
@@ -71,7 +73,7 @@ Javascript 와 CSS 를 이용해서 깨작깨작 한번 맹글어 보았다. 무
             // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
             modal.querySelector('.modal_close_btn').addEventListener('click', function () {
                 bg.remove();
-                modal.remove();
+                modal.style.display = 'none';
             });
 
             modal.setStyle({
@@ -98,8 +100,10 @@ Javascript 와 CSS 를 이용해서 깨작깨작 한번 맹글어 보았다. 무
             return this;
         };
 
-        // 모달창 띄우기
-        modal('my_modal');
+        document.getElementById('popup_open_btn').addEventListener('click', function(){
+            // 모달창 띄우기
+            modal('my_modal');
+        });
     </script>
 </body>
 </html>
@@ -133,6 +137,8 @@ Javascript 와 CSS 를 이용해서 깨작깨작 한번 맹글어 보았다. 무
     incidunt?
     <a class="modal_close_btn">닫기</a>
 </div>
+
+<button id="popup_open_btn">팝업창 띄어 줘염</button>
 ```
 
 - 모달창 맨들어 주는 함수
@@ -160,7 +166,7 @@ function modal(id) {
     // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
     modal.querySelector('.modal_close_btn').addEventListener('click', function () {
         bg.remove();
-        modal.remove();
+        modal.style.display = 'none';
     });
 
     modal.setStyle({
@@ -187,8 +193,10 @@ Element.prototype.setStyle = function (styles) {
     return this;
 };
 
-// 모달창 띄우기
-modal('my_modal');
+document.getElementById('popup_open_btn').addEventListener('click', function(){
+    // 모달창 띄우기
+    modal('my_modal');
+});
 ```
 
 - jQuery 버전으로도 맨들어봄
@@ -230,12 +238,14 @@ function modal(id) {
         // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
         .find('.modal_close_btn').on('click', function () {
             bg.remove();
-            modal.remove();
+            modal.hide();
         });
 }
 
-// 모달창 띄우기
-modal('my_modal');
+$('#popup_open_btn').on('click', function(){
+    // 모달창 띄우기
+    modal('my_modal');
+});
 ```
 
 ## 실행결과
