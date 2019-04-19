@@ -54,7 +54,7 @@ image-sm: https://picsum.photos/500/300?image=15
 
             // 오늘이 설정한 expired date 전이면 팝업창 보여지게
             if( today < expired_date ){
-                popup[i].style.display = 'inline';
+                popup[i].style.display = 'block';
             }
             // 아니면 html 에서 삭제 시킴
             else{
@@ -106,13 +106,36 @@ for( var i=0, size=popup.length; i<size; i++ ){
 
     // 오늘이 설정한 expired date 전이면 팝업창 보여지게
     if( today < expired_date ){
-        popup[i].style.display = 'inline';
+        popup[i].style.display = 'block';
     }
     // 아니면 html 에서 삭제 시킴
     else{
         popup[i].parentElement.removeChild(popup[i]);
     }
 }
+```
+
+- jQuery 도 맨들어봄
+
+```javascript
+var today = new Date();
+
+// html 에서 data-expired 가 설정된 팝업 div 들을 찾기
+$('[data-expired]').each(function(){
+    // 문자열을 공백, -, : 으로 나눠서 배열로 저장
+    var d = $(this).data('expired').split(/[\s,\-:]+/);
+
+    var expired_date = new Date(d[0], d[1]-1, d[2], d[3]||24, d[4]||0);
+
+    // 오늘이 설정한 expired date 전이면 팝업창 보여지게
+    if( today < expired_date ){
+        $(this).show();
+    }
+    // 아니면 html 에서 삭제 시킴
+    else{
+        $(this).remove();
+    }
+});
 ```
 
 ## 실행결과

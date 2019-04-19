@@ -103,7 +103,7 @@ jQuery 로 맨든 버전은 죠아래 스크롤 내려보면 있음
                     popup.style.left = left;
                     popup.style.width = w;
                     popup.style.height = h;
-                    popup.style.display = 'inline';
+                    popup.style.display = 'block';
                 }
             }
 
@@ -181,7 +181,7 @@ function layerPopup(id, top, left, w, h) {
         popup.style.left = left;
         popup.style.width = w;
         popup.style.height = h;
-        popup.style.display = 'inline';
+        popup.style.display = 'block';
     }
 }
 ```
