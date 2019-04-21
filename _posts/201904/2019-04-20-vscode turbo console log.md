@@ -8,6 +8,8 @@ image: https://picsum.photos/2000/1200?image=19
 image-sm: https://picsum.photos/500/300?image=19
 ---
 
+<img src="/assets/attach/201904/turbo-console-log.png" style="max-width:700px;">
+
 콘솔에 로그를 찍고 싶은 부분을 블럭 잡은 다음에 단축키를 눌러서 console.log() 코드를 생성해 주는 확장 프로그램이다.
 
 ## console.log 생성 : ctrl + alt + L
