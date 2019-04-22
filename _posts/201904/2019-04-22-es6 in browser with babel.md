@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'IE 에서 ES6 구문 사용하기'
-date: 2019-04-20
+date: 2019-04-22
 keywords: 'javascript,babel'
 categories: [Javascript]
 image: https://picsum.photos/2000/1200?image=20
