@@ -206,7 +206,9 @@ image-sm: https://picsum.photos/500/300?image=1010
                 });
 
                 // 탭키로 포커스 왔을때 펼치기 (클릭이벤트랑 포커스 이벤트가 겹쳐서 쫌 꾸리하게 처리함)
-                btn[i].addEventListener("focus", function() {
+                btn[i].addEventListener("focus", function(e) {
+                    e.stopImmediatePropagation();
+
                     var el = this;
                     setTimeout(function() {
                         el.className.indexOf("on") < 0 && el.dispatchEvent(new MouseEvent("click"));
@@ -214,8 +216,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                 });
             }
 
-            // 메뉴외 다른영역 클릭했을때 메뉴 닫기
-            document.addEventListener("click", function() {
+            // 메뉴에서 포커스 벗어나면 메뉴 닫기
+            document.querySelector(".menuBox").addEventListener("focusout", function() {
                 btn.removeClass("on");
                 for (var i = 0, size = btn.length; i < size; i++) {
                     btn[i].nextElementSibling.style.display = "none";
@@ -268,7 +270,9 @@ btn.on("click", function(e) {
 });
 
 // 탭키로 포커스 왔을때 펼치기 (클릭이벤트랑 포커스 이벤트가 겹쳐서 쫌 꾸리하게 처리함)
-btn.on("focus", function() {
+btn.on("focus", function(e) {
+    e.stopImmediatePropagation();
+
     var el = $(this);
 
     setTimeout(function() {
@@ -276,9 +280,9 @@ btn.on("focus", function() {
     }, 150);
 });
 
-// 메뉴외 다른영역 클릭했을때 메뉴 닫기
-$(document).on("click", function() {
+// 메뉴에서 포커스 벗어나면 메뉴 닫기
+$(".menuBox").on("focusout", function() {
     btn.removeClass("on");
-    btn.next().hide();
+    btn.siblings("div").hide();
 });
 ```
