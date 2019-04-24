@@ -45,7 +45,7 @@ image-sm: https://picsum.photos/500/300?image=1010
                 margin: 0 1px 1px 0;
             }
 
-            .menuBox li a {
+            .menuBox li > a {
                 display: block;
                 position: relative;
                 color: #000;
@@ -55,7 +55,7 @@ image-sm: https://picsum.photos/500/300?image=1010
             }
 
             /* a 태그 옆에 화살표 이미지 추가 */
-            .menuBox li a:after {
+            .menuBox li > a:after {
                 content: "";
                 display: inline-block;
                 position: absolute;
@@ -73,14 +73,14 @@ image-sm: https://picsum.photos/500/300?image=1010
                 transition: all 0.3s ease-out;
             }
 
-            .menuBox li a:hover {
+            .menuBox li > a:hover {
                 color: #000;
                 font-weight: bold;
             }
 
             /* 마우스 오버나 on 클래스가 있을때 이미지 90도로 돌리기 */
-            .menuBox li a:hover::after,
-            .menuBox li a.on::after {
+            .menuBox li > a:hover::after,
+            .menuBox li > a.on::after {
                 -webkit-transform: rotateZ(90deg);
                 -moz-transform: rotateZ(90deg);
                 -ms-transform: rotateZ(90deg);
@@ -88,7 +88,7 @@ image-sm: https://picsum.photos/500/300?image=1010
                 transform: rotateZ(90deg);
             }
 
-            .menuBox li a.on {
+            .menuBox li > a.on {
                 color: #000;
                 font-weight: bold;
                 background-color: #fff;
@@ -116,9 +116,9 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴1</a>
                     <div>
                         <p>
-                            메뉴1 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem,
-                            totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis
-                            ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴1 ipsum dolor, sit amet <a href="#">11111</a> adipisicing elit. Officia animi ad laborum
+                            dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
+                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -175,6 +175,8 @@ image-sm: https://picsum.photos/500/300?image=1010
             </ul>
         </div>
 
+        <a href="#">메뉴 밖 링크</a>
+
         <script>
             // 메뉴버튼 6개 가져오기
             var btn = document.querySelectorAll(".menuBox li > a");
@@ -206,7 +208,7 @@ image-sm: https://picsum.photos/500/300?image=1010
                 });
 
                 // 탭키로 포커스 왔을때 펼치기 (클릭이벤트랑 포커스 이벤트가 겹쳐서 쫌 꾸리하게 처리함)
-                btn[i].addEventListener("focus", function(e) {
+                btn[i].addEventListener("focusin", function(e) {
                     e.stopImmediatePropagation();
 
                     var el = this;
@@ -217,10 +219,13 @@ image-sm: https://picsum.photos/500/300?image=1010
             }
 
             // 메뉴에서 포커스 벗어나면 메뉴 닫기
-            document.querySelector(".menuBox").addEventListener("focusout", function() {
-                btn.removeClass("on");
-                for (var i = 0, size = btn.length; i < size; i++) {
-                    btn[i].nextElementSibling.style.display = "none";
+            document.body.addEventListener("focusin", function(e) {
+                // 펼쳐진 메뉴에 포커스가 갔을때 메뉴가 닫히지 않게 처리
+                if (!e.target.parents(".menuBox").length) {
+                    btn.removeClass("on");
+                    for (var i = 0, size = btn.length; i < size; i++) {
+                        btn[i].nextElementSibling.style.display = "none";
+                    }
                 }
             });
 
@@ -230,6 +235,24 @@ image-sm: https://picsum.photos/500/300?image=1010
                     this[i].classList.remove(cls);
                 }
                 return this;
+            };
+
+            Element.prototype.parents = function(selector) {
+                var elements = [];
+                var elem = this;
+                var ishaveselector = selector !== undefined;
+
+                while ((elem = elem.parentElement) !== null) {
+                    if (elem.nodeType !== Node.ELEMENT_NODE) {
+                        continue;
+                    }
+
+                    if (!ishaveselector || elem.matches(selector)) {
+                        elements.push(elem);
+                    }
+                }
+
+                return elements;
             };
         </script>
     </body>
@@ -270,7 +293,7 @@ btn.on("click", function(e) {
 });
 
 // 탭키로 포커스 왔을때 펼치기 (클릭이벤트랑 포커스 이벤트가 겹쳐서 쫌 꾸리하게 처리함)
-btn.on("focus", function(e) {
+btn.on("focusin", function(e) {
     e.stopImmediatePropagation();
 
     var el = $(this);
@@ -281,8 +304,11 @@ btn.on("focus", function(e) {
 });
 
 // 메뉴에서 포커스 벗어나면 메뉴 닫기
-$(".menuBox").on("focusout", function() {
-    btn.removeClass("on");
-    btn.siblings("div").hide();
+$(document).on("focusin", function(e) {
+    // 펼쳐진 메뉴에 포커스가 갔을때 메뉴가 닫히지 않게 처리
+    if (!$(e.target).parents(".menuBox").length) {
+        btn.removeClass("on");
+        btn.siblings("div").hide();
+    }
 });
 ```
