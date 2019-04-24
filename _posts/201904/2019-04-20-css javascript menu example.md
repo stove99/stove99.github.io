@@ -182,7 +182,9 @@ image-sm: https://picsum.photos/500/300?image=18
 
             for (var i = 0, size = btn.length; i < size; i++) {
                 // 메뉴 버튼 클릭했을때 처리
-                btn[i].addEventListener("click", function() {
+                btn[i].addEventListener("click", function(e) {
+                    e.stopImmediatePropagation();
+
                     // 클릭한 메뉴가 이미 펼쳐진 상태면 현재 메뉴 닫기
                     if (this.className.indexOf("on") > -1) {
                         this.classList.remove("on");
@@ -204,11 +206,22 @@ image-sm: https://picsum.photos/500/300?image=18
                     }
                 });
 
-                // 탭키로 포커스가 왔을때 처리
+                // 탭키로 포커스 왔을때 펼치기 (클릭이벤트랑 포커스 이벤트가 겹쳐서 쫌 꾸리하게 처리함)
                 btn[i].addEventListener("focus", function() {
-                    this.dispatchEvent(new MouseEvent("click"));
+                    var el = this;
+                    setTimeout(function() {
+                        el.className.indexOf("on") < 0 && el.dispatchEvent(new MouseEvent("click"));
+                    }, 150);
                 });
             }
+
+            // 메뉴외 다른영역 클릭했을때 메뉴 닫기
+            document.addEventListener("click", function() {
+                btn.removeClass("on");
+                for (var i = 0, size = btn.length; i < size; i++) {
+                    btn[i].nextElementSibling.style.display = "none";
+                }
+            });
 
             // NodeList 에 removeClass 함수 추가
             NodeList.prototype.removeClass = function(cls) {
@@ -229,34 +242,44 @@ image-sm: https://picsum.photos/500/300?image=18
 var btn = $(".menuBox li > a");
 
 // 메뉴버튼 클릭했을때 처리
-btn.on("click", function() {
+btn.on("click", function(e) {
+    e.stopImmediatePropagation();
+
+    var el = $(this);
+
     // 클릭한 메뉴가 이미 펼쳐진 상태면 현재 메뉴 닫기
     // $(this) = 클릭한 <a> 태그
-    if ($(this).hasClass("on")) {
-        $(this).removeClass("on");
+    if (el.hasClass("on")) {
+        el.removeClass("on");
 
         // <a> 태그의 바로옆 태그 = div
-        $(this)
-            .next()
-            .hide();
+        el.next().hide();
     }
     // 다른 열려 있는 메뉴들 닫고 현재 클릭한 메뉴만 펼치기
     else {
         // 다른 메뉴 버튼에 설정된 on 클래스 삭제 후 클릭한 버튼에 on 클래스 추가
         btn.removeClass("on");
-        $(this).addClass("on");
+        el.addClass("on");
 
         // 다른 열려 있는 메뉴 레이어 안보이게 처리 후 클릭한 메뉴 보이게
         // 6개 <a> 태그들의 이웃에 있는 애들중에 <div> 태그들 = 메뉴 레이어 div
         btn.siblings("div").hide();
-        $(this)
-            .next()
-            .show();
+        el.next().show();
     }
 });
 
-// 탭키로 포커스가 왔을때 처리
+// 탭키로 포커스 왔을때 펼치기 (클릭이벤트랑 포커스 이벤트가 겹쳐서 쫌 꾸리하게 처리함)
 btn.on("focus", function() {
-    $(this).trigger("click");
+    var el = $(this);
+
+    setTimeout(function() {
+        !el.hasClass("on") && el.trigger("click");
+    }, 150);
+});
+
+// 메뉴외 다른영역 클릭했을때 메뉴 닫기
+$(document).on("click", function() {
+    btn.removeClass("on");
+    btn.next().hide();
 });
 ```
