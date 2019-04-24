@@ -4,8 +4,8 @@ title: "CSS & Javascript 로 맹글어본 메뉴"
 date: 2019-04-20
 keywords: "javascript,css,jquery"
 categories: [Javascript, jQuery]
-image: https://picsum.photos/2000/1200?image=18
-image-sm: https://picsum.photos/500/300?image=18
+image: https://picsum.photos/2000/1200?image=1010
+image-sm: https://picsum.photos/500/300?image=1010
 ---
 
 ## 맨들어본 결과물 미리보기
@@ -92,7 +92,6 @@ image-sm: https://picsum.photos/500/300?image=18
                 color: #000;
                 font-weight: bold;
                 background-color: #fff;
-                border-top: solid 1px #fff;
             }
 
             .menuBox li div {
