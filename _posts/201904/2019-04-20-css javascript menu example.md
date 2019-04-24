@@ -8,6 +8,8 @@ image: https://picsum.photos/2000/1200?image=1010
 image-sm: https://picsum.photos/500/300?image=1010
 ---
 
+마우스로 클릭하거나 탭키로 포커스를 이동했을때 아래쪽으로 메뉴가 폿 열리는걸 맨들어 보았다.
+
 ## 맨들어본 결과물 미리보기
 
 <script async src="//jsfiddle.net/stove/ersc65u0/embed/result/dark/"></script>
