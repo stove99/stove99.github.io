@@ -31,8 +31,8 @@ public class AuthCheckInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws ModelAndViewDefiningException {
         if (request.getSession().getAttribute("login_user") == null) {
-            ModelAndView mav = new ModelAndView(
-                    String.format("user/login", request.getServletContext().getContextPath()));
+            ModelAndView mav = new ModelAndView(String.format("user/login"));
+            mav.addObject("message", "추가 에트리뷰트");
 
             throw new ModelAndViewDefiningException(mav);
         }
