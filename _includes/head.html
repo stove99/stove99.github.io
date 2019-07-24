@@ -1,4 +1,12 @@
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: 'ca-pub-7073298118440059',
+            enable_page_level_ads: true
+        });
+    </script>
+
     {% if site.google_analytics %}
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -7,9 +15,9 @@
         function gtag() {
             dataLayer.push(arguments);
         }
-        gtag("js", new Date());
+        gtag('js', new Date());
 
-        gtag("config", "{{ site.google_analytics }}");
+        gtag('config', '{{ site.google_analytics }}');
     </script>
     {% endif %}
     <meta charset="utf-8" />
@@ -54,7 +62,5 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" />
 
-    <link rel="shortcut icon" href="{{
-        "/assets/img/favicon.ico" | prepend: site.baseurl
-    }}">
+    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl }}" />
 </head>
