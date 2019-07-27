@@ -1,0 +1,103 @@
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    {% if site.google_analytics %}
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="google-site-verification" content="SgDMWub_iUDQxA1gKywuHQrWeicEMCegmd6Vjvt1f9I" />
+    <meta name="naver-site-verification" content="3ccd10b0500f583c9bffb8df17d4f3029b88a7af" />
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}" />
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.default_img }}{% endif %}" />
+    <meta property="og:type" content="blog" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}" />
+    <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:site" content="{{ site.title }}" />
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:domain" content="{{ site.url }}" />
+    <meta property="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.default_img }}{% endif %}" />
+
+    <link href="//fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css" />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/ocean.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}" />
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" />
+
+    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl }}" />
+
+    <style>
+        table {
+            padding: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        table tr {
+            border-top: 1px solid #cccccc;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        table tr:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+
+        table tr th {
+            font-weight: bold;
+            border: 1px solid #cccccc;
+            text-align: left;
+            margin: 0;
+            padding: 6px 13px;
+        }
+
+        table tr td {
+            border: 1px solid #cccccc;
+            text-align: left;
+            margin: 0;
+            padding: 6px 13px;
+        }
+
+        table tr th :first-child,
+        table tr td :first-child {
+            margin-top: 0;
+        }
+
+        table tr th :last-child,
+        table tr td :last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
