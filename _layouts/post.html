@@ -28,12 +28,12 @@ layout: default
         <div class="post">
             {{ content }}
         </div>
-
-        <div class="disqus">
-            {% include comments.html %}
-        </div>
     </section>
 </article>
+
+<div class="disqus">
+    {% include comments.html %}
+</div>
 
 {% if page.previous.url %}
 <section class="next">
