@@ -2,8 +2,8 @@
 layout: post
 title: 'Visual Studio Code 에서 async/await 구문 에러표시 될때'
 date: 2019-07-26
-keywords: 'javascript'
-categories: [Javascript]
+keywords: 'ETC'
+categories: [ETC]
 image: https://images.unsplash.com/photo-1502604459884-2842c8f3624a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1502604459884-2842c8f3624a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
