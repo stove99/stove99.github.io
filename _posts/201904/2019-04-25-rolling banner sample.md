@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "롤링 배너 샘플"
+title: '롤링 배너 샘플'
 date: 2019-04-25
-keywords: "javascript"
+keywords: 'javascript'
 categories: [Javascript]
 image: https://picsum.photos/2000/1200?image=1026
 image-sm: https://picsum.photos/500/300?image=1026
@@ -11,6 +11,17 @@ image-sm: https://picsum.photos/500/300?image=1026
 ## 결과물
 
 <script async src="//jsfiddle.net/stove/4ztyfgpe/embed/result/dark/"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 소스
 
@@ -52,12 +63,12 @@ image-sm: https://picsum.photos/500/300?image=1026
             }
 
             .banner > button.prev {
-                background-image: url("https://www.kipo.go.kr/wcom/new/images/main/btn_banner_prev.gif");
+                background-image: url('https://www.kipo.go.kr/wcom/new/images/main/btn_banner_prev.gif');
                 margin: 0px 10px;
             }
 
             .banner > button.next {
-                background-image: url("https://www.kipo.go.kr/wcom/new/images/main/btn_banner_next.gif");
+                background-image: url('https://www.kipo.go.kr/wcom/new/images/main/btn_banner_next.gif');
                 margin: 0px 10px;
             }
 
@@ -128,15 +139,15 @@ image-sm: https://picsum.photos/500/300?image=1026
         </div>
 
         <script>
-            var banners = $(".banner");
+            var banners = $('.banner');
 
             banners.each(function(idx, el) {
                 var banner = $(el);
 
-                var btn = banner.find(".banner_nav_btn");
-                var scroll_area = banner.find(".scroll_area > ul");
-                var banner_items = scroll_area.find("li");
-                var show = parseInt(banner.data("show"));
+                var btn = banner.find('.banner_nav_btn');
+                var scroll_area = banner.find('.scroll_area > ul');
+                var banner_items = scroll_area.find('li');
+                var show = parseInt(banner.data('show'));
 
                 // 딱 보이는 영역 넓이
                 var banner_width = 0;
@@ -175,7 +186,7 @@ image-sm: https://picsum.photos/500/300?image=1026
 
                     scroll_area.stop().animate(
                         {
-                            left: -w * cur_pos + "px"
+                            left: -w * cur_pos + 'px'
                         },
                         {
                             duration: duration || 500,
@@ -184,7 +195,7 @@ image-sm: https://picsum.photos/500/300?image=1026
                                 if (cur_pos > banner_count - show - 1) {
                                     setTimeout(function() {
                                         cur_pos = 0;
-                                        scroll_area.animate({ left: "0px" }, 100);
+                                        scroll_area.animate({ left: '0px' }, 100);
                                     }, 1000);
                                 }
                             }
@@ -194,32 +205,32 @@ image-sm: https://picsum.photos/500/300?image=1026
 
                 // 포커스 이동 처리
                 // 포커스가 왔을때 제일 앞쪽으로 땡김
-                banner_items.find("a").on("focus", function(e) {
+                banner_items.find('a').on('focus', function(e) {
                     var el = $(e.currentTarget);
                     var width = 0;
 
-                    cur_pos = banner_items.index(el.parents("li"));
-                    banner_items.filter(":lt(" + cur_pos + ")").each(function(idx, item) {
+                    cur_pos = banner_items.index(el.parents('li'));
+                    banner_items.filter(':lt(' + cur_pos + ')').each(function(idx, item) {
                         width += $(item).outerWidth();
                     });
-                    scroll_area.stop().css("left", -1 * width + "px");
+                    scroll_area.stop().css('left', -1 * width + 'px');
                 });
 
                 // 네이게이션 버튼 이벤트 처리
-                btn.on("click", function(e) {
+                btn.on('click', function(e) {
                     e.preventDefault();
 
                     var el = $(e.currentTarget);
-                    var direction = el.data("direction");
+                    var direction = el.data('direction');
 
                     // 뒤로 가기 버튼 클릭했을때
-                    if (direction == "prev") {
+                    if (direction == 'prev') {
                         if (cur_pos == 0) return;
                         cur_pos = cur_pos - 2;
                         _move(100);
                     }
                     // 앞으로 가기 버튼 클릭했을때
-                    else if (direction == "next") {
+                    else if (direction == 'next') {
                         if (cur_pos > banner_count - show - 1) return;
                         cur_pos == 0 && cur_pos++;
                         _move(100);
@@ -229,11 +240,11 @@ image-sm: https://picsum.photos/500/300?image=1026
                 scroll_area_width += 4;
 
                 // 넓이 설정
-                scroll_area.parent().css("width", banner_width);
-                scroll_area.css("width", scroll_area_width);
+                scroll_area.parent().css('width', banner_width);
+                scroll_area.css('width', scroll_area_width);
                 banner.css({
                     width: banner_width + btn_width,
-                    visibility: "visible"
+                    visibility: 'visible'
                 });
             });
         </script>

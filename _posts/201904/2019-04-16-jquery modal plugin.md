@@ -55,6 +55,17 @@ image-sm: https://picsum.photos/500/300?image=1011
 })(jQuery);
 ```
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 사용법은 대충 요렇게.
 
 ```javascript
@@ -119,8 +130,8 @@ $.popup({
     </style>
 
     <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi voluptatem iusto beatae sequi ex quam tempora laboriosam facere, facilis nulla nostrum impedit ducimus, porro quasi quos,
-        itaque optio corporis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi voluptatem iusto beatae sequi ex quam tempora laboriosam facere, facilis nulla nostrum impedit ducimus,
+        porro quasi quos, itaque optio corporis.
     </p>
 
     <div class="text-center">

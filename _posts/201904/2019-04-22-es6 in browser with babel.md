@@ -19,6 +19,17 @@ babel-standalone, babel-polyfill js 두개만 불러오면 끝.
 <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.3/polyfill.js"></script>
 ```
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## es6 사용하기
 
 ### script type 에 text/babel 을 설정하면 es6 구문을 사용할 수 있다.

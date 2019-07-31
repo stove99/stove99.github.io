@@ -20,6 +20,17 @@ MariaDB 공식 Docker 이미지로 -v 옵션을 줘서 data 가 저장될 폴더
 
     docker run -d -p 3306:3306 -v d:\docker\maria:/bitnami/mariadb -e MARIADB_ROOT_PASSWORD=비밀번호 --name maria bitnami/mariadb
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 종료
 
     docker stop maria

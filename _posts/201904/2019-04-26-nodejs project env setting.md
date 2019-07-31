@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Node.js 운영/개발 환경별 프로퍼티 설정하기"
+title: 'Node.js 운영/개발 환경별 프로퍼티 설정하기'
 date: 2019-04-26
-keywords: "Node.js"
+keywords: 'Node.js'
 categories: [Node.js]
 image: https://picsum.photos/2000/1200?image=1033
 image-sm: https://picsum.photos/500/300?image=1033
@@ -36,6 +36,17 @@ image-sm: https://picsum.photos/500/300?image=1033
     }
 }
 ```
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## package.json scripts 부분에 적용하기
 

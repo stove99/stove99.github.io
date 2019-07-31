@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Thymeleaf 로 URL 맹글기 정리"
+title: 'Thymeleaf 로 URL 맹글기 정리'
 date: 2019-04-30
-keywords: "java,thymeleaf"
-categories: [Java,Thymeleaf]
+keywords: 'java,thymeleaf'
+categories: [Java, Thymeleaf]
 image: https://picsum.photos/2000/1200?image=1042
 image-sm: https://picsum.photos/500/300?image=1042
 ---
@@ -12,8 +12,8 @@ image-sm: https://picsum.photos/500/300?image=1042
 
 ```json
 {
-    no: 123,
-    title: "테스트"
+    "no": 123,
+    "title": "테스트"
 }
 ```
 
@@ -28,6 +28,17 @@ image-sm: https://picsum.photos/500/300?image=1042
 <a href="/board/123">링크1</a>
 <a href="/board/123/테스트">링크2</a>
 ```
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Parameter(@RequestParam) 맹글기
 

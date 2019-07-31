@@ -12,6 +12,17 @@ image-sm: https://picsum.photos/500/300?image=1010
 
 <script async src="//jsfiddle.net/stove/ersc65u0/embed/result/dark/"></script>
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 전체소스
 
 소스에다 대충 주석을 달아보았다.
@@ -122,8 +133,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴1</a>
                     <div>
                         <p>
-                            <a href="#">메뉴1 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
-                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            <a href="#">메뉴1 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas
+                            temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -131,8 +142,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴2</a>
                     <div>
                         <p>
-                            <a href="#">메뉴2 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
-                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            <a href="#">메뉴2 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas
+                            temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -140,8 +151,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴3</a>
                     <div>
                         <p>
-                            메뉴3 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴3 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
+                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -149,8 +160,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴4</a>
                     <div>
                         <p>
-                            메뉴4 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴4 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
+                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -158,8 +169,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴5</a>
                     <div>
                         <p>
-                            메뉴5 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴5 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
+                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -167,8 +178,8 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴6</a>
                     <div>
                         <p>
-                            메뉴6 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴6 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
+                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>

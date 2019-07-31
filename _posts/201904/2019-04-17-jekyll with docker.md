@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "내 PC에서 Github Page 편집하고 바로바로 확인하기(Docker 를 활용한 jekyll 로컬 서버 맹글기)"
-date:   2019-04-17
-keywords: "docker,jekyll,github"
+title: '내 PC에서 Github Page 편집하고 바로바로 확인하기(Docker 를 활용한 jekyll 로컬 서버 맹글기)'
+date: 2019-04-17
+keywords: 'docker,jekyll,github'
 categories: [Docker]
 tags: [docker]
 icon: icon-docker
@@ -23,24 +23,35 @@ Github 페이지로 훌로구 활동을 하면서 뭐 하나 살짝 수정하고
 3. <http://127.0.0.1:4000> 에 접속해서 수정한것들 바로바로 확인
 4. 다 된것 같으면 commit 후 github 에 push
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## docker-compose.yml
 
-``` yaml
+```yaml
 version: '3'
 services:
-  site:
-    container_name: my_blog
-    command: jekyll serve --watch --destination /home/jekyll/dist
-    image: jekyll/jekyll
-    volumes:
-      - .:/srv/jekyll
-    ports:
-      - 4000:4000
+    site:
+        container_name: my_blog
+        command: jekyll serve --watch --destination /home/jekyll/dist
+        image: jekyll/jekyll
+        volumes:
+            - .:/srv/jekyll
+        ports:
+            - 4000:4000
 ```
 
 ## 로컬서버 실행
 
-``` bash
+```bash
 docker-compose up
 ```
 
@@ -48,7 +59,7 @@ docker-compose up
 
 ctrl + c 로 종료하면 되는데 예외 상황이 발생해서 서버가 계속 구동되 있다면 당황하지 말고 요렇게 종료 시키면 된다.
 
-``` bash
+```bash
 docker rm my_blog
 ```
 
@@ -56,7 +67,7 @@ docker rm my_blog
 
 컨테이너에 접속해서 추가 적으로 작업할 것이 있다면
 
-``` bash
+```bash
 docker exec -it my_blog /bin/sh
 ```
 
@@ -67,10 +78,12 @@ Winodws Docker 는 Shared Drive 설정을 해 줘야 한다. 그리고 파일 �
 파일 변경하면 docker jekyll 을 껏다 켯다 하는 불편함이 있다. 뭐 이렇게 껏다 켰다 하면서 해도 되고 불편하면 [docker-windows-volume-watcher](https://github.com/hnakamur/docker-windows-volume-watcher/releases) 라는 후로그램을 실행시켜 놓고 써도 된다.
 
 1. Docker Windows Volume Watcher
- - [다운로드](https://github.com/hnakamur/docker-windows-volume-watcher/releases)
- - 다운로드 받은 docker-windows-volume-watcher.exe 파일을 PATH 가 설정된 디렉토리(ex)c:\windows)에 복사한다.
- - 현재 프로젝트 최상위 디렉토리에서 docker-windows-volume-watcher 를 실행한다.
- - docker-windows-volume-watcher -ignoredir .git
+
+-   [다운로드](https://github.com/hnakamur/docker-windows-volume-watcher/releases)
+-   다운로드 받은 docker-windows-volume-watcher.exe 파일을 PATH 가 설정된 디렉토리(ex)c:\windows)에 복사한다.
+-   현재 프로젝트 최상위 디렉토리에서 docker-windows-volume-watcher 를 실행한다.
+-   docker-windows-volume-watcher -ignoredir .git
+
 2. Shared Drive 설정
 
 <img src="/assets/attach/201904/windows-docker-setting.png" alt="drawing" style="max-width:700px;"/>

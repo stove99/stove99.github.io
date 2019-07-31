@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Spring Boot : Argument Resolver 로 로그인 유저 정보 쉽게 가져오기"
+title: 'Spring Boot : Argument Resolver 로 로그인 유저 정보 쉽게 가져오기'
 date: 2019-05-03
-keywords: "java,spring boot"
+keywords: 'java,spring boot'
 categories: [Java, SpringBoot]
 image: https://picsum.photos/2000/1200?image=1050
 image-sm: https://picsum.photos/500/300?image=1050
@@ -36,6 +36,17 @@ private void main(@LoginUserId String id){
     ...
 }
 ```
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Annotaion 맹글기
 

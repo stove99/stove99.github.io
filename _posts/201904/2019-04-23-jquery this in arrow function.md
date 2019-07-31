@@ -3,7 +3,7 @@ layout: post
 title: 'jQuery 에서 arrow function 쓸 때 this 처리'
 date: 2019-04-23
 keywords: 'javascript,jquery'
-categories: [Javascript,jQuery]
+categories: [Javascript, jQuery]
 image: https://picsum.photos/2000/1200?image=27
 image-sm: https://picsum.photos/500/300?image=27
 ---
@@ -13,11 +13,11 @@ arrow function 을 사용하지 않는다면 굳이 이렇게 할 필요는 없�
 ```javascript
 $('#temp_btn').on('click', e => {
     var el = $(this);
-    console.log(el);  // Window {postMessage: ƒ, parent: Window, …}
+    console.log(el); // Window {postMessage: ƒ, parent: Window, …}
 });
 ```
 
-요렇게 로그를 찍어서 확인해 볼 수 있는데 arrow function 내에서 this 는 Window 객체를 참조한다. 따라서 $(this).attr('href') 요런 코드를 쓰면 원하는 값을 쪽바로 가져오지 못하고 undefined 만 리턴된다.
+요렇게 로그를 찍어서 확인해 볼 수 있는데 arrow function 내에서 this 는 Window 객체를 참조한다. 따라서 \$(this).attr('href') 요런 코드를 쓰면 원하는 값을 쪽바로 가져오지 못하고 undefined 만 리턴된다.
 
 ## 수정
 
@@ -30,6 +30,17 @@ $('#temp_btn').on('click', e => {
     console.log(el.attr('href'));
 });
 ```
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## each 에서 this 처리
 

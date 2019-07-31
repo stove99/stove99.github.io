@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Spring Boot : Froala Editor 이미지 업로드 처리"
+title: 'Spring Boot : Froala Editor 이미지 업로드 처리'
 date: 2019-05-07
-keywords: "java,spring boot,javascript"
+keywords: 'java,spring boot,javascript'
 categories: [Java, SpringBoot, Javascript]
 image: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
@@ -14,11 +14,11 @@ image-sm: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-
 <div id="froala-editor"></div>
 
 <script>
-    $("div#froala-editor").froalaEditor({
-        imageUploadURL: "/image", // 업로드 처리 end point
-        imageUploadParam: "file", // 파일 파라메터명
-        imageUploadMethod: "POST",
-        imageAllowedTypes: ["jpeg", "jpg", "png"],
+    $('div#froala-editor').froalaEditor({
+        imageUploadURL: '/image', // 업로드 처리 end point
+        imageUploadParam: 'file', // 파일 파라메터명
+        imageUploadMethod: 'POST',
+        imageAllowedTypes: ['jpeg', 'jpg', 'png'],
         imageMaxSize: 2 * 1024 * 1024 // 최대 이미지 사이즈 : 2메가
     });
 </script>
@@ -153,6 +153,17 @@ public class StorageServcie {
     }
 }
 ```
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### FileController.java
 

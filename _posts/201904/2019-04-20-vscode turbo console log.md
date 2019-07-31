@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Visual Studio Code 추천 확장 : Turbo Console Log"
-date:   2019-04-20
-keywords: "javascript,css,jquery"
+title: 'Visual Studio Code 추천 확장 : Turbo Console Log'
+date: 2019-04-20
+keywords: 'javascript,css,jquery'
 categories: [ETC]
 image: https://picsum.photos/2000/1200?image=19
 image-sm: https://picsum.photos/500/300?image=19
@@ -17,6 +17,17 @@ image-sm: https://picsum.photos/500/300?image=19
 로그로 찍고 싶은 변수나 구문을 블럭으로 잡은 후 단축키를 누르면 된다. js 파일이나 html script 블럭에서 작동한다.
 
 <img src="https://camo.githubusercontent.com/b83125daaa0adac01f1b9c74a4d491c3465fcfc6/68747470733a2f2f696d6167652e6962622e636f2f6479737737702f696e736572745f6c6f675f6d6573736167652e676966" style="max-width:600px">
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 생성된 console.log 일괄 주석 처리 : shift + alt + c
 

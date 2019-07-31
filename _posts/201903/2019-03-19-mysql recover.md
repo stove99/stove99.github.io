@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Mysql InnoDB database drop 했을때 복구하기"
-date:   2019-03-19
-keywords: "mysql,recover,drop"
+title: 'Mysql InnoDB database drop 했을때 복구하기'
+date: 2019-03-19
+keywords: 'mysql,recover,drop'
 categories: [Linux]
-tags: [mysql,recover]
+tags: [mysql, recover]
 icon: icon-mysql
 image: https://picsum.photos/2000/1200?image=903
 image-sm: https://picsum.photos/500/300?image=903
@@ -16,7 +16,7 @@ image-sm: https://picsum.photos/500/300?image=903
 
 ## TwinDB data recovery toolkit 설치
 
-``` bash
+```bash
 git clone https://github.com/twindb/undrop-for-innodb.git
 
 cd undrop-for-innodb
@@ -24,9 +24,20 @@ cd undrop-for-innodb
 make
 ```
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## mysql data 디렉토리에 있는 ibdata1 처리
 
-``` bash
+```bash
 ./stream_parser -f /var/lib/mysql/ibdata1
 ```
 
@@ -34,7 +45,7 @@ make
 
 ## 복구가능한 테이블 보기
 
-``` bash
+```bash
 ./c_parser -4Df pages-ibdata1/FIL_PAGE_INDEX/0000000000000001.page -t dictionary/SYS_TABLES.sql | grep db명
 
 # db 명이 sample 이면 요렇게
@@ -43,14 +54,14 @@ make
 
 ## 복구할 테이블 데이터가 있는 인덱스 파일 찾기
 
-``` bash
+```bash
 ./c_parser -4Df pages-ibdata1/FIL_PAGE_INDEX/0000000000000003.page -t dictionary/SYS_INDEXES.sql | grep 테이블명
 
 # 테이블 명이 tb_test 면 요렇게
 ./c_parser -4Df pages-ibdata1/FIL_PAGE_INDEX/0000000000000003.page -t dictionary/SYS_INDEXES.sql | grep tb_test
 
 # 실행하면 요런식으로 나오는데 인덱스 파일 번호는 381 이다.
-00000000CA51    1F000002AF1F53  SYS_INDEXES   379   381   "tb\_test"  1  3  0       4294967295     
+00000000CA51    1F000002AF1F53  SYS_INDEXES   379   381   "tb\_test"  1  3  0       4294967295
 00000000CA51    1F000002AF1F53  SYS_INDEXES   379   381   "tb\_test"  1  3  0       4294967295
 ```
 
@@ -58,7 +69,7 @@ make
 
 tb_test.sql 파일을 생성해서 tb_test 테이블의 CREATE DDL 을 작성한다.
 
-``` bash
+```bash
 ./c_parser -6f pages-ibdata1/FIL_PAGE_INDEX/인덱스파일번호.page -t "create table 스카마파일" > "생성될 데이터 파일" 2> "데이터 파일 로드용 sql 파일"
 
 # 위에서 찾은 인덱스 파일 번호가 381 이기 때문에 요렇게
@@ -67,7 +78,7 @@ tb_test.sql 파일을 생성해서 tb_test 테이블의 CREATE DDL 을 작성한
 
 ## mysql 접속 후 복구하기
 
-``` bash
+```bash
 mysql --local-infile -uroot -p
 
 # 디비가 drop 됐기 때문에 디비 생성

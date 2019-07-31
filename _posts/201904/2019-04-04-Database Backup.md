@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "crontab 을 활용한 oracle, mysql 주기적으로 백업하기"
-date:   2019-04-04
-keywords: "mysql,oracle,backup,crontab"
+title: 'crontab 을 활용한 oracle, mysql 주기적으로 백업하기'
+date: 2019-04-04
+keywords: 'mysql,oracle,backup,crontab'
 categories: [Linux]
-tags: [mysql,oracle,backup,crontab]
+tags: [mysql, oracle, backup, crontab]
 icon: icon-mysql
 image: https://picsum.photos/2000/1200?image=3
 image-sm: https://picsum.photos/500/300?image=3
@@ -14,7 +14,7 @@ image-sm: https://picsum.photos/500/300?image=3
 
 Mysql 용 백업 스크립트는 대충 요렇게 맹글어 본다.
 
-``` bash
+```bash
 mkdir ~/cron
 vi ~/cron/mysql_backup.sh
 
@@ -32,7 +32,7 @@ chmod u+x ~/mysql_backup.sh
 
 oracle 용 백업스크립트는 요렇게.. exp 라는 걸 활용하면 되는데 오라클 설치할때 같이 설치됨
 
-``` bash
+```bash
 mkdir ~/cron
 vi ~/cron/oracle_backup.sh
 
@@ -50,7 +50,7 @@ chmod u+x ~/oracle_backup.sh
 
 exp 를 실행해 보면 ORACLE_HOME 설정하라 그러면서 실행이 안되는 경우가 있는데 고럴땐 ORACLE_HOME, ORACLE_SID 를 환경변수에 등록해 주면 된다.
 
-``` bash
+```bash
 vi ~/.bash_profile
 
 # .bash_profile 끝에 환경변수 두개 추가
@@ -61,9 +61,20 @@ export ORACLE_SID=SID 명 또는 Service Name
 source ~/.bash_profile
 ```
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 스크립트 테스트
 
-``` bash
+```bash
 ~/cron/mysql_backup.sh
 ```
 
@@ -71,7 +82,7 @@ source ~/.bash_profile
 
 ## crontab 에 등록해서 주기적으로 백업받기
 
-``` bash
+```bash
 crontab -e
 
 # 매일 새벽 3시에 백업돌리기
