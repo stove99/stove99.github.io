@@ -27,6 +27,17 @@ image-sm: https://images.unsplash.com/photo-1555885215-cbd53c552665?crop=entropy
 </dependency>
 ```
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 샘플 소스 & 설명
 
 ```java
