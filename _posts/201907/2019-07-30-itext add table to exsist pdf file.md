@@ -55,6 +55,7 @@ import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Phrase;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfContentByte;
+import com.itextpdf.text.pdf.PdfGState;
 import com.itextpdf.text.pdf.PdfImportedPage;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
@@ -97,6 +98,11 @@ public class PDFTest {
                 // (0, -1) : 전체 row, 뒤에 숫자 두개는 추가할 위치(x, y) = 왼쪽에서 20, top+20 위치에 테이블 추가
                 makeHeader("1234567", "홍길동").writeSelectedRows(0, -1, 20, document.top() + 20, canvas);
             }
+
+            // 이미지 투명하게 처리
+            PdfGState state = new PdfGState();
+            state.setFillOpacity(0.2f);
+            canvas.setGState(state);
 
             // 워터마트 이미지 추가
             canvas.addImage(img);
