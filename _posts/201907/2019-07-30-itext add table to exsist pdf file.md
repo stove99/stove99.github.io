@@ -41,7 +41,7 @@ image-sm: https://images.unsplash.com/photo-1555885215-cbd53c552665?crop=entropy
 ## 샘플 소스 & 설명
 
 ```java
-package io.github.stove99.jwt_sample;
+package io.github.stove99.sample;
 
 import java.io.File;
 import java.io.IOException;
