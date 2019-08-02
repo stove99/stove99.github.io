@@ -8,7 +8,7 @@ image: https://images.unsplash.com/photo-1450340171252-2766ed65a4ec?crop=entropy
 image-sm: https://images.unsplash.com/photo-1450340171252-2766ed65a4ec?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
-SpringBoot2 & Thymeleaf 로 구성된 전통정인(?) 환경에서 JWT 를 이용한 로그인 처리 샘플
+SpringBoot2 & Thymeleaf 로 구성된 전통적인(?) 환경에서 JWT 를 이용한 로그인 처리 샘플
 
 JWT 방식으로 하면 SSO 처리를 쉽게 할 수 있을 것 같아서 나중에 써먹을려고 샘플을 일단 만들어 보았다.
 
