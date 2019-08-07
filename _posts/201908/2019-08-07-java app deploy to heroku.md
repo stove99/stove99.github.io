@@ -32,6 +32,17 @@ heroku 로그인 명령을 입력하면 브라우저 창이 하나 뜨는데 가
 heroku login
 ```
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## heroku app 생성
 
 git 으로 소스를 관리하고 있지 않고 있다면, heroku app 을 생성하기 전에 git 저장소를 init 하고 로컬 git 에 커밋까지 하고나서 진행한다.
