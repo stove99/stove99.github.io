@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'JAVA : SpringBoot 어플리케이션 heroku 에 올리기'
-date: 2019-08-06
+date: 2019-08-07
 keywords: 'SpringBoot, heroku'
 categories: [SpringBoot]
 image: https://images.unsplash.com/photo-1468276898059-765dd484c793?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
