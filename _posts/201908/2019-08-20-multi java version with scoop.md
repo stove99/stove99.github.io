@@ -76,3 +76,7 @@ java -version
 # openjdk version "12.0.2"
 
 ```
+
+## 설치가능한 jdk 목록
+
+<https://github.com/ScoopInstaller/Java/tree/master/bucket>
