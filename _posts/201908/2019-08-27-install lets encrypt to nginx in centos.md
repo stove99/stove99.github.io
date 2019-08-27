@@ -14,6 +14,14 @@ image-sm: https://images.unsplash.com/photo-1561399250-9d86b9ee228c?crop=entropy
 yum install epel-release
 ```
 
+## certbot 설치
+
+CLI 로 인증서를 생성 및 관리할 수 있도록 해주는 프로그램이다.
+
+```bash
+yum install certbot
+```
+
 ## 443 포트 방화벽 오픈
 
 ```bash
@@ -38,14 +46,6 @@ firewall-cmd --reload
 
 ```bash
 service nginx stop
-```
-
-## certbot 설치
-
-CLI 로 인증서를 생성 및 관리할 수 있도록 해주는 프로그램이다.
-
-```bash
-yum install certbot
 ```
 
 ## 인증서 생성
