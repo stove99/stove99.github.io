@@ -10,7 +10,7 @@ image-sm: https://images.unsplash.com/photo-1480365720180-945d31112159?crop=entr
 
 ## _mixins.scss
 
-```css
+```scss
 $spacer: 1rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
