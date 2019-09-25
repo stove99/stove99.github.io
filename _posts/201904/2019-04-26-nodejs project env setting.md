@@ -25,16 +25,37 @@ image-sm: https://picsum.photos/500/300?image=1033
         "ENV_PROP2": "값2"
     },
     "dev": {
-        "db_url": "jdbc:mariadb://127.0.0.1:3306/dbname",
+        "db_url": "mariadb://127.0.0.1:3306/dbname",
         "dp_user": "test",
         "dp_psssword": "test"
     },
     "prod": {
-        "db_url": "jdbc:mariadb://xxx.xxx.xxx.xxx:3306/dbname",
+        "db_url": "mariadb://xxx.xxx.xxx.xxx:3306/dbname",
         "dp_user": "test1",
         "dp_psssword": "test2"
     }
 }
+```
+
+js 파일로 프로퍼티를 관리할수도 있다. 파일명은 .env-cmdrc.js 로 하면 된다.
+
+```javascript
+module.exports = Promise.resolve({
+    common: {
+        ENV_PROP1: '값1',
+        ENV_PROP2: '값2'
+    },
+    dev: {
+        db_url: 'mariadb://127.0.0.1:3306/dbname',
+        dp_user: 'test',
+        dp_psssword: 'test'
+    },
+    prod: {
+        db_url: 'mariadb://xxx.xxx.xxx.xxx:3306/dbname',
+        dp_user: 'test1',
+        dp_psssword: 'test2'
+    }
+});
 ```
 
 <ins class="adsbygoogle"
@@ -54,8 +75,8 @@ image-sm: https://picsum.photos/500/300?image=1033
 
 ```json
 "scripts": {
-    "start": "env-cmd common,prod node index.js",
-    "start:dev": "env-cmd common,dev nodemon index.js"
+    "start": "env-cmd -e common,prod node index.js",
+    "start:dev": "env-cmd -e common,dev nodemon index.js"
 }
 ```
 
