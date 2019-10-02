@@ -23,20 +23,12 @@
     {% endfor %}
 
     {% unless include.excerpt %}
-    <div class="markdown-body">
-
-        {% if post.header-img %}<div class="head-image"><img src="{{ site.url }}/{% if post.header-img %}assets/{{ post.header-img }}{% endif %}" /></div>
-        <br />{% elsif tag.header-img %}
-        <div class="head-image"><img src="{{ site.url }}/assets/{{ tag.header-img }}" /></div>
-        <br />{% endif %}
-        <br />
+    <div class="markdown-body post">
         {{ post.content }}
-        <br />
     </div>
     {% else %}
     {{ post.excerpt }}
-    <p class="read-more"><a class="heading" href="{{ post.url | relative_url }}" data-flip="title">Continue reading </a>
-    </p>
+    <p class="read-more"><a class="heading" href="{{ post.url | relative_url }}" data-flip="title">Continue reading </a></p>
     {% endunless %}
 
 </article>
