@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'Mysql InnoDB database drop 했을때 복구하기'
-date: 2019-03-19
 keywords: 'mysql,recover,drop'
-categories: [Linux]
-tags: [mysql, recover]
-icon: icon-mysql
+categories: database
 image: https://picsum.photos/2000/1200?image=903
 image-sm: https://picsum.photos/500/300?image=903
 ---

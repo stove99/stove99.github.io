@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Java NIO File 스트림 맨들기'
-date: 2019-08-22
 keywords: 'java, nio, stream'
-categories: [Java]
+categories: java
 image: https://images.unsplash.com/photo-1461638273344-c45a4eab94e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1461638273344-c45a4eab94e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

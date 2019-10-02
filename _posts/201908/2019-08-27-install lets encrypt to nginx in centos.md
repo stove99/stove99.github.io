@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'CentOS7 + nginx 에 Lets Encrypt 무료인증서 설치 & 설정'
-date: 2019-08-27
 keywords: 'centos,ssl,nginx'
-categories: [Linux]
+categories: linux
 image: https://images.unsplash.com/photo-1561399250-9d86b9ee228c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1561399250-9d86b9ee228c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

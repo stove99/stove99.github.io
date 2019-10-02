@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Java : User-Agent 분석하기'
-date: 2019-05-15
 keywords: 'java'
-categories: [Java]
+categories: java
 image: https://images.unsplash.com/photo-1489321336462-efe12c02d099?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1489321336462-efe12c02d099?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

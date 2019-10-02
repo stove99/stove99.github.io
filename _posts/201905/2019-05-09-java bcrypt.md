@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Java : BCrypt 로 문자열 암호화 하기"
-date: 2019-05-09
-keywords: "java,BCrypt"
-categories: [Java]
+title: 'Java : BCrypt 로 문자열 암호화 하기'
+keywords: 'java,BCrypt'
+categories: java
 image: https://images.unsplash.com/photo-1547623542-de3ff5941ddb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1547623542-de3ff5941ddb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

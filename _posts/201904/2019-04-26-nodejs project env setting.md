@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Node.js 운영/개발 환경별 프로퍼티 설정하기'
-date: 2019-04-26
 keywords: 'Node.js'
-categories: [Node.js]
+categories: node
 image: https://picsum.photos/2000/1200?image=1033
 image-sm: https://picsum.photos/500/300?image=1033
 ---

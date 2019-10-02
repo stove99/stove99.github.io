@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Javascript 로 모바일 접속여부 판단하기'
-date: 2019-08-13
 keywords: 'javascript, bowser'
-categories: [Javascript]
+categories: javascript
 image: https://images.unsplash.com/photo-1466995937966-2e6f29c6ed60?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1466995937966-2e6f29c6ed60?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

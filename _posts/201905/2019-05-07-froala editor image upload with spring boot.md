@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Spring Boot : Froala Editor 이미지 업로드 처리'
-date: 2019-05-07
 keywords: 'java,spring boot,javascript'
-categories: [Java, SpringBoot, Javascript]
+categories: java
+tags: java springboot
 image: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

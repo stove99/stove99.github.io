@@ -1,11 +1,8 @@
 ---
 layout: post
 title: '내 PC에서 Github Page 편집하고 바로바로 확인하기(Docker 를 활용한 jekyll 로컬 서버 맹글기)'
-date: 2019-04-17
 keywords: 'docker,jekyll,github'
-categories: [Docker]
-tags: [docker]
-icon: icon-docker
+categories: docker
 image: https://images.unsplash.com/photo-1497275898956-8166fcc6721d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1497275898956-8166fcc6721d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

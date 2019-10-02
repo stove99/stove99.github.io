@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "scoop 로 jdk 버전 바꿔가며 사용하기"
-date: 2019-08-20
-keywords: "scoop,java"
-categories: [JAVA]
+title: 'scoop 로 jdk 버전 바꿔가며 사용하기'
+keywords: 'scoop,java'
+categories: java
 image: https://images.unsplash.com/photo-1541397734122-b770d5235576?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1541397734122-b770d5235576?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

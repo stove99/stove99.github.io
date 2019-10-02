@@ -1,9 +1,9 @@
 ---
 layout: post
 title: '팝업창 오늘하루 그만보기 만들기'
-date: 2019-04-18
 keywords: 'javascript,cookie,jquery'
-categories: [Javascript, jQuery]
+categories: javascript
+tags: javascript jquery
 image: https://picsum.photos/2000/1200?image=11
 image-sm: https://picsum.photos/500/300?image=11
 ---

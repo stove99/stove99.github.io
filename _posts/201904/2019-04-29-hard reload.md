@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '브라우저 현재 페이지 강제 리로딩 하기(Hard Reload)'
-date: 2019-04-29
 keywords: 'etc'
-categories: [ETC]
+categories: etc
 image: https://picsum.photos/2000/1200?image=1040
 image-sm: https://picsum.photos/500/300?image=1040
 ---

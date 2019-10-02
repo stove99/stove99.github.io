@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Spring Boot : Interceptor 에서 forward 처리하기"
-date: 2019-05-02
-keywords: "java,spring boot"
-categories: [Java, SpringBoot]
+title: 'Spring Boot : Interceptor 에서 forward 처리하기'
+keywords: 'java,spring boot'
+categories: java
+tags: java springboot
 image: https://picsum.photos/2000/1200?image=1047
 image-sm: https://picsum.photos/500/300?image=1047
 ---

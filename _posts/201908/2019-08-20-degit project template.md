@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'degit 으로 git 에 있는 템플릿 프로젝트 받아오기'
-date: 2019-08-20
 keywords: 'degit'
-categories: [ETC]
+categories: etc
 image: https://images.unsplash.com/photo-1440778303588-435521a205bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1440778303588-435521a205bc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

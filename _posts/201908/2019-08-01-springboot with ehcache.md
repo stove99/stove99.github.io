@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'JAVA : SpringBoot2 에 Ehcache3 적용하기'
-date: 2019-08-01
 keywords: 'SpringBoot, Ehcache3'
-categories: [SpringBoot]
+categories: java
+tags: java springboot
 image: https://images.unsplash.com/photo-1498623116890-37e912163d5d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1498623116890-37e912163d5d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

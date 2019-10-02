@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'JAVA : SpringBoot2 & Thymeleaf 에서 JWT 이용해서 로그인 하기'
-date: 2019-08-02
 keywords: 'SpringBoot, jwt'
-categories: [SpringBoot]
+categories: java
+tags: java springboot
 image: https://images.unsplash.com/photo-1450340171252-2766ed65a4ec?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1450340171252-2766ed65a4ec?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

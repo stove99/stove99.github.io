@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Gmail javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. 에러"
-date: 2019-04-30
-keywords: "java,gmail"
-categories: [Java, ETC]
+title: 'Gmail javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. 에러'
+keywords: 'java,gmail'
+categories: java
 image: https://picsum.photos/2000/1200?image=1043
 image-sm: https://picsum.photos/500/300?image=1043
 ---

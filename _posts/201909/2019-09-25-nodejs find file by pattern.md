@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '[Node.js] 패턴과 일치하는 파일목록 찾기'
-date: 2019-09-25
 keywords: 'node, glob'
-categories: [Node.js]
+categories: node
 image: https://images.unsplash.com/photo-1444483911532-30de7b1b0aaf?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1444483911532-30de7b1b0aaf?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

@@ -1,51 +1,129 @@
-# Site/SEO settings
-email: stove99@gmail.com
-permalink: /:year/:month/:day/:title/
-google_analytics: UA-132745802-1
-timezone: Asia/Seoul
+--- # -----------------------------------------------------------------------------
 
+# -----------------------------------------------------------------------------
+#  User configuration
 title: 슷호브 New 훌로구
-description: 슷호브 New 훌로구에요!
-url: 'https://stove99.github.io'
+
+# The unique resource location of your page.
+# Set to `https://<username>.github.io` when hosting on GitHub Pages
+url: https://stove99.github.io/
+
+# Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
+# Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl: ''
-twitter_username:
-default_img:
 
-# comment
-disqus:
+# A very short description of your page
+tagline: 슷호브 New 훌로구에요!
+
+# A short description of the page, used in the sidebar and as fallback for the meta description tag.
+# Markdown enabled, but don't use more than one paragraph (enforced by `>`)
+description: >
+    슷호브 New 훌로구에요!
+
+# This should be the same author as first entry in `_data/authors.yml`
+author:
     name: stove99
+    email: stove99@gmail.com
 
-# Profile settings
-name: 슷호브
-profile_img: /assets/img/avatar.jpg
-profile:
-social:
-    github: https://github.com/stove99/
+# Fallback image and color
+image: /assets/img/nap.jpg
+color: '#4f86aa'
 
-# Build settings
-markdown: kramdown
-plugins:
-    - jekyll-paginate
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading: "'Lato', 'Sans-serif'"
+
+# The text font. Expects a string that is a valid CSS font-family value.
+font: "'Lato', 'Sans-serif'"
+
+# The string encoding what fonts to fetch from Google Fonts.
+# See: https://qwtel.com/hydejack/docs/configuration/
+google_fonts: Lato
+
+# If you do not use a Google Fonts, uncomment the line below
+# no_google_fonts:     true
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+google_analytics: UA-132745802-1
+
+# Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
+disqus_shortname: stove99
+
+# This text will appear in the footer of every page. Markdown enabled.
+copyright: '&copy; 2017. by stove99'
+
+# Format of the permalinks
+permalink: pretty
+
+# Pagination configuration (used by the `blog` layout)
+paginate: 8
+paginate_path: '/page-:num/'
+
+# If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:              atom.xml
+
+# Set to true when building with the `--lsi` option
+# See: https://jekyllrb.com/docs/variables/#site-variables
+# use_lsi:             true
+
+# Set to `true` if you don't want to show an icon after each link that opens to an external site
+# no_mark_external:    true
+
+# Uncomment this line if third party plugins fail to work with dynimically loaded pages
+# disable_push_state:  true
+
+# Uncomment this line if want to disable the touch drawer on mobile
+# disable_drawer: true
+
+# -----------------------------------------------------------------------------
+#  Collections
+# -----------------------------------------------------------------------------
+
+collections:
+    featured_categories:
+        permalink: /category/:name/
+        output: true
+    featured_tags:
+        permalink: /tag/:name/
+        output: true
+    projects:
+        permalink: /projects/:path/
+        output: true
+
+# -----------------------------------------------------------------------------
+#  Advanced configuration
+# -----------------------------------------------------------------------------
+
+gems:
+    - jekyll-feed
     - jekyll-sitemap
-    - octopress-autoprefixer
-compress_html:
-    clippings: all
-    comments: all
-    startings: [html, head, body]
+    - jekyll-paginate
+    - jekyll-redirect-from
 
 exclude:
-    - _screenshots
-    - .DS_Store
+    - README.md
+    - LICENSE.md
+    - node_modules
+    - package.json
+    - package-lock.json
     - Gemfile
     - Gemfile.lock
-    - LICENSE.txt
-    - README.md
 
-# Pagination
-paginate: 10
-paginate_path: '/blog/page-:num'
+kramdown:
+    footnote_backlink: '&#x21a9;&#xfe0e;'
+    math_engine: mathjax
+    math_engine_opts:
+        preview: true
+        preview_as_code: true
 
-# Sass
+compress_html:
+    comments: ['<!-- ', ' -->']
+    clippings: all
+    endings: all
+    ignore:
+        envs: [development]
+
 sass:
     style: compressed
-    cache: false

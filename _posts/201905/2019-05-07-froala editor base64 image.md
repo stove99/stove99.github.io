@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Froala Editor 이미지 업로드시 서버로 업로드 하지 않고 BASE64 인코딩으로 처리하기"
-date: 2019-05-07
-keywords: "javascript, Froala Editor"
-categories: [Javascript]
+title: 'Froala Editor 이미지 업로드시 서버로 업로드 하지 않고 BASE64 인코딩으로 처리하기'
+keywords: 'javascript, Froala Editor'
+categories: javascript
 image: https://images.unsplash.com/photo-1522426131985-b9b7019ec14d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1522426131985-b9b7019ec14d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---
@@ -19,9 +18,9 @@ image-sm: https://images.unsplash.com/photo-1522426131985-b9b7019ec14d?ixlib=rb-
 
 <script>
     $(function() {
-        $("div#froala-editor")
+        $('div#froala-editor')
             .froalaEditor()
-            .on("froalaEditor.image.beforeUpload", function(e, editor, files) {
+            .on('froalaEditor.image.beforeUpload', function(e, editor, files) {
                 if (files.length) {
                     var reader = new FileReader();
 

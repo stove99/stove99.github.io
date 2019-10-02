@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '카카오톡 광고 없애기'
-date: 2019-05-15
 keywords: 'Kakao talk'
-categories: [ETC]
+categories: etc
 image: https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

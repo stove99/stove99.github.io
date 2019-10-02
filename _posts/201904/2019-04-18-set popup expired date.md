@@ -1,9 +1,9 @@
 ---
 layout: post
 title: '특정 날짜 까지만 팝업창 뜨게 하기'
-date: 2019-04-18
 keywords: 'javascript,jquery'
-categories: [Javascript, jQuery]
+categories: javascript
+tags: javascript jquery
 image: https://picsum.photos/2000/1200?image=15
 image-sm: https://picsum.photos/500/300?image=15
 ---

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'JAVA : 두 날짜 사이의 차이 구하기'
-date: 2019-05-22
 keywords: 'java'
-categories: [Java]
+categories: java
 image: https://images.unsplash.com/photo-1552978730-f820c227a2f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1552978730-f820c227a2f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

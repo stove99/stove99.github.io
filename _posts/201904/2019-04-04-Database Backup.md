@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'crontab 을 활용한 oracle, mysql 주기적으로 백업하기'
-date: 2019-04-04
 keywords: 'mysql,oracle,backup,crontab'
-categories: [Linux]
-tags: [mysql, oracle, backup, crontab]
-icon: icon-mysql
+categories: linux
 image: https://picsum.photos/2000/1200?image=3
 image-sm: https://picsum.photos/500/300?image=3
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Spring Boot : Argument Resolver 로 IP 가져오기'
-date: 2019-05-15
 keywords: 'IP, Annotation, Spring-boot'
-categories: [Java, SpringBoot]
+categories: java
+tags: java springboot
 image: https://images.unsplash.com/photo-1553602932-f93f674a9aaa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1553602932-f93f674a9aaa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

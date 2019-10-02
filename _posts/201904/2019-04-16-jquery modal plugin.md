@@ -1,11 +1,9 @@
 ---
 layout: post
 title: 'jQuery Modal Plugin 팝업창 띄우기 예제'
-date: 2019-04-16
 keywords: 'javascript,jquery,modal'
-categories: [Javascript, jQuery]
-tags: [javascript, jquery, modal]
-icon: icon-jquery
+categories: javascript
+tags: javascript jquery
 image: https://picsum.photos/2000/1200?image=1011
 image-sm: https://picsum.photos/500/300?image=1011
 ---
@@ -130,8 +128,8 @@ $.popup({
     </style>
 
     <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi voluptatem iusto beatae sequi ex quam tempora laboriosam facere, facilis nulla nostrum impedit ducimus,
-        porro quasi quos, itaque optio corporis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi voluptatem iusto beatae sequi ex quam tempora laboriosam facere, facilis nulla nostrum impedit ducimus, porro quasi quos,
+        itaque optio corporis.
     </p>
 
     <div class="text-center">

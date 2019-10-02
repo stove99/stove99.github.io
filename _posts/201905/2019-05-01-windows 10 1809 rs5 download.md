@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Windows 10, Version 1809 - Redstone 5 x64 [Sept 2018] (build 17763.1) 다운로드'
-date: 2019-04-30
 keywords: 'etc'
-categories: [ETC]
+categories: etc
 image: https://picsum.photos/2000/1200?image=1044
 image-sm: https://picsum.photos/500/300?image=1044
 ---

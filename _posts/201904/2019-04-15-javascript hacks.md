@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'Javascript 여러가지 유용한 문구들'
-date: 2019-04-15
 keywords: 'javascript'
-categories: [Javascript]
-tags: [javascript]
-icon: icon-javascript
+categories: javascript
 image: https://picsum.photos/2000/1200?image=837
 image-sm: https://picsum.photos/500/300?image=837
 ---

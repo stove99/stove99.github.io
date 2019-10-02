@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'jQuery 에서 arrow function 쓸 때 this 처리'
-date: 2019-04-23
 keywords: 'javascript,jquery'
-categories: [Javascript, jQuery]
+categories: javascript
+tags: javascript jquery
 image: https://picsum.photos/2000/1200?image=27
 image-sm: https://picsum.photos/500/300?image=27
 ---

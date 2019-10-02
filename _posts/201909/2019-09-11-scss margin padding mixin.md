@@ -1,14 +1,13 @@
 ---
 layout: post
 title: '[SCSS] SCSS Spacing(margin&padding) 믹스인'
-date: 2019-09-11
 keywords: 'scss'
-categories: [ETC]
+categories: etc
 image: https://images.unsplash.com/photo-1480365720180-945d31112159?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1480365720180-945d31112159?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
-## _mixins.scss
+## \_mixins.scss
 
 ```scss
 $spacer: 1rem !default;
@@ -134,7 +133,7 @@ $spacers: map-merge(
 
 ```scss
 @include mr(-2);
-````
+```
 
 ```css
 margin-right: -0.5rem;

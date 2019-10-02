@@ -1,11 +1,8 @@
 ---
 layout: post
-title:  "scp로 파일 전송할때 비밀번호 입력창없이 전송하기"
-date:   2019-03-19
-keywords: "sshpass,scp"
-categories: [Linux]
-tags: [sshpass,scp]
-icon: icon-ubuntu
+title: 'scp로 파일 전송할때 비밀번호 입력창없이 전송하기'
+keywords: 'sshpass,scp'
+categories: linux
 image: https://picsum.photos/2000/1200?image=874
 image-sm: https://picsum.photos/500/300?image=874
 ---
@@ -20,7 +17,7 @@ image-sm: https://picsum.photos/500/300?image=874
 
 ## sshpass 없을경우 설치
 
-``` bash
+```bash
 # ubuntu
 sudo apt install sshpass
 

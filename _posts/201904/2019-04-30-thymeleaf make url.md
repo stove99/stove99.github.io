@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Thymeleaf 로 URL 맹글기 정리'
-date: 2019-04-30
 keywords: 'java,thymeleaf'
-categories: [Java, Thymeleaf]
+categories: java
+tags: java thymeleaf
 image: https://picsum.photos/2000/1200?image=1042
 image-sm: https://picsum.photos/500/300?image=1042
 ---

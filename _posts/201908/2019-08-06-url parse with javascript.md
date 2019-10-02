@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Javascript 로 파라메터 가져오기(URI.js)'
-date: 2019-08-06
 keywords: 'javascript, url, parameter'
-categories: [Javascript]
+categories: javascript
 image: https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

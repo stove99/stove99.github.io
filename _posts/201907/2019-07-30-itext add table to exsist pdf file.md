@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'JAVA : itextpdf 로 기존 pdf 파일에 워터마크 및 이것저것 추가해 보기'
-date: 2019-07-30
 keywords: 'java'
-categories: [Java]
+categories: java
 image: https://images.unsplash.com/photo-1555885215-cbd53c552665?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1555885215-cbd53c552665?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

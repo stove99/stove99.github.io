@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '[jQuery] html 채팅 div 메시지 수신시 자동으로 스크롤 아래로 움직이기'
-date: 2019-09-05
 keywords: 'html, javascript'
-categories: [Javascript]
+categories: javascript
 image: https://images.unsplash.com/photo-1476722817135-8d33bf111a0c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1476722817135-8d33bf111a0c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

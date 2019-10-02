@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Java NIO (Files & Path) 로 파일 복사하기"
-date: 2019-08-16
-keywords: "java, nio, copy"
-categories: [Java]
+title: 'Java NIO (Files & Path) 로 파일 복사하기'
+keywords: 'java, nio, copy'
+categories: java
 image: https://images.unsplash.com/photo-1564407343863-4c93a68ebe53?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1564407343863-4c93a68ebe53?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

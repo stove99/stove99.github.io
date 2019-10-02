@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'jQuery 대체 라이브러리 : cash'
-date: 2019-07-25
 keywords: 'javascript'
-categories: [Javascript]
+categories: javascript
+tags: javascript jquery
 image: https://images.unsplash.com/photo-1542282910-7337bcfea235?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1542282910-7337bcfea235?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

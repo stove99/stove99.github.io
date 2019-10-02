@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'anime.js 로 롤링배너 맹글기'
-date: 2019-05-11
 keywords: 'javascript'
-categories: [Javascript]
+categories: javascript
 image: https://images.unsplash.com/photo-1527062489662-19fc7250d875?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=1200&fit=crop&ixid=eyJhcHBfaWQiOjF9
 image-sm: https://images.unsplash.com/photo-1527062489662-19fc7250d875?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---

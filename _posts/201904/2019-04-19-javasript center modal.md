@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Javascript 로 페이지 딱 중앙에다 모달창을 띄어보자'
-date: 2019-04-19
 keywords: 'javascript,jquery'
-categories: [Javascript, jQuery]
+categories: javascript
+tags: javascript jquery
 image: https://picsum.photos/2000/1200?image=16
 image-sm: https://picsum.photos/500/300?image=16
 ---
@@ -41,8 +41,8 @@ Javascript 와 CSS 를 이용해서 깨작깨작 한번 맹글어 보았다. 무
 
     <body>
         <div id="my_modal">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat doloribus
-            mollitia dolorem voluptatum ex reiciendis aut in incidunt?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat doloribus mollitia dolorem
+            voluptatum ex reiciendis aut in incidunt?
             <a class="modal_close_btn">닫기</a>
         </div>
 
@@ -140,8 +140,8 @@ Javascript 와 CSS 를 이용해서 깨작깨작 한번 맹글어 보았다. 무
 </style>
 
 <div id="my_modal">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat doloribus mollitia
-    dolorem voluptatum ex reiciendis aut in incidunt?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat doloribus mollitia dolorem voluptatum ex
+    reiciendis aut in incidunt?
     <a class="modal_close_btn">닫기</a>
 </div>
 

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Windows Docker 에서 MariaDB 설치하기'
-date: 2019-04-24
 keywords: 'docker,MariaDB'
-categories: [Docker]
+categories: docker
 image: https://picsum.photos/2000/1200?image=1025
 image-sm: https://picsum.photos/500/300?image=1025
 ---

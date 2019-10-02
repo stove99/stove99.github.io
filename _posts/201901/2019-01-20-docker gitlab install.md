@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'Docker 로 Gitlab 설치하기'
-date: 2019-01-20
 keywords: 'docker,gitlab'
-categories: [Docker]
-tags: [docker, gitlab]
-icon: icon-docker
+categories: docker
 image: https://picsum.photos/2000/1200?image=924
 image-sm: https://picsum.photos/500/300?image=924
 ---

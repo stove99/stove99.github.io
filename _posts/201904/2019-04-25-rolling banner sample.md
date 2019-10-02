@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '롤링 배너 샘플'
-date: 2019-04-25
 keywords: 'javascript'
-categories: [Javascript]
+categories: javascript
 image: https://picsum.photos/2000/1200?image=1026
 image-sm: https://picsum.photos/500/300?image=1026
 ---

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '[JS] Javascript 로 함수 캐시하기'
-date: 2019-09-06
 keywords: 'javascript'
-categories: [Javascript]
+categories: javascript
 image: https://images.unsplash.com/photo-1535406148013-5806f2127f58?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1535406148013-5806f2127f58?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

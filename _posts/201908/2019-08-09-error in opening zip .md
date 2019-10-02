@@ -1,9 +1,8 @@
 ---
 layout: post
 title: '배포후 WAS 스타트시 java.util.zip.ZipException: error in opening zip file 에러가 날때'
-date: 2019-08-09
-keywords: 'static html, heroku'
-categories: [ETC]
+keywords: 'java'
+categories: java
 image: https://images.unsplash.com/photo-1558290305-2cb15d4d5ed6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1558290305-2cb15d4d5ed6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Visual Studio Code 추천 확장 : Turbo Console Log'
-date: 2019-04-20
-keywords: 'javascript,css,jquery'
-categories: [ETC]
+keywords: 'vscode'
+categories: etc
 image: https://picsum.photos/2000/1200?image=19
 image-sm: https://picsum.photos/500/300?image=19
 ---
