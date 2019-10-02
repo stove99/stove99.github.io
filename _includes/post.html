@@ -22,12 +22,10 @@
     {% endunless %}
     {% endfor %}
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     {% unless include.excerpt %}
     <div class="markdown-body">
 
-        {% if post.header-img %}<div class="head-image"><img
-                src="{{ site.url }}/{% if post.header-img %}assets/{{ post.header-img }}{% endif %}" /></div>
+        {% if post.header-img %}<div class="head-image"><img src="{{ site.url }}/{% if post.header-img %}assets/{{ post.header-img }}{% endif %}" /></div>
         <br />{% elsif tag.header-img %}
         <div class="head-image"><img src="{{ site.url }}/assets/{{ tag.header-img }}" /></div>
         <br />{% endif %}
@@ -48,13 +46,11 @@
 <div class="share">
     <h2>Share this post</h2>
     <div class="share-body">
-        <a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}"
-            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="icon-twitter">
             </span>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
-            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <span class="icon-facebook">
             </span>
         </a>
