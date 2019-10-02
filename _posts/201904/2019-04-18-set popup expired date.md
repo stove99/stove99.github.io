@@ -113,10 +113,10 @@ var popup = document.querySelectorAll('[data-expired]');
 for (var i = 0, size = popup.length; i < size; i++) {
     // 문자열을 공백, -, : 으로 나눠서 배열로 저장
     var d = popup[i].getAttribute('data-expired').split(/[\s,\-:]+/);
-    var expired_date = new Date(d[0], d[1] - 1, d[2], d[3] || 24, d[4] || 0);
+    var expired_date = new Date(+d[0], +d[1] - 1, +d[2], +d[3] || 23, +d[4] || 59, +d[5] || 59);
 
     // 오늘이 설정한 expired date 전이면 팝업창 보여지게
-    if (today < expired_date) {
+    if (today <= expired_date) {
         popup[i].style.display = 'block';
     }
     // 아니면 html 에서 삭제 시킴
@@ -138,10 +138,10 @@ $('[data-expired]').each(function() {
         .data('expired')
         .split(/[\s,\-:]+/);
 
-    var expired_date = new Date(d[0], d[1] - 1, d[2], d[3] || 24, d[4] || 0);
+    var expired_date = new Date(+d[0], +d[1] - 1, +d[2], +d[3] || 23, +d[4] || 59, +d[5] || 59);
 
     // 오늘이 설정한 expired date 전이면 팝업창 보여지게
-    if (today < expired_date) {
+    if (today <= expired_date) {
         $(this).show();
     }
     // 아니면 html 에서 삭제 시킴
