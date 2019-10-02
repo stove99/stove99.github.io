@@ -7,9 +7,9 @@ image: https://picsum.photos/2000/1200?image=1062
 image-sm: https://picsum.photos/500/300?image=1062
 ---
 
-## LMS 란
-
 LMS 가 뭔가 했더만 러닝 매니지먼트 시스템? 온라인강의시스템 뭐 요딴거라고 한다.
+
+아무튼 plyr 라이브러리로 LMS 를 구현해 보자.
 
 ## 필요한 기능
 

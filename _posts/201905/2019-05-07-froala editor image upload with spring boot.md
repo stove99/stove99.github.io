@@ -8,6 +8,8 @@ image: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-1.2
 image-sm: https://images.unsplash.com/photo-1455146164878-6c4be78e1433?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9
 ---
 
+Spring Boot 로 Froala Editor 이미지 업로드 처리를 하는 서버측 소스
+
 ## 클라이언트 HTML
 
 ```html

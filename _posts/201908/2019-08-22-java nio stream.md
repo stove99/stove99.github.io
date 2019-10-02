@@ -7,6 +7,8 @@ image: https://images.unsplash.com/photo-1461638273344-c45a4eab94e1?crop=entropy
 image-sm: https://images.unsplash.com/photo-1461638273344-c45a4eab94e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
+기존에 뻔질나게 써왔던 File 대신 있어보이게 NIO 로 스트림을 맨들어 보자.
+
 ## Java NIO(Path) 로 File 스트림 맨들기
 
 ```java

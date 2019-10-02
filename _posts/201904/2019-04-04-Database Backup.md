@@ -7,6 +7,8 @@ image: https://picsum.photos/2000/1200?image=3
 image-sm: https://picsum.photos/500/300?image=3
 ---
 
+crontab 을 활용한 oracle, mysql 주기적으로 백업하는 쉘 스크립트
+
 ## 백업을 수행할 shell script 작성
 
 Mysql 용 백업 스크립트는 대충 요렇게 맹글어 본다.

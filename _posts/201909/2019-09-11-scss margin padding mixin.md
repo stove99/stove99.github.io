@@ -7,6 +7,10 @@ image: https://images.unsplash.com/photo-1480365720180-945d31112159?crop=entropy
 image-sm: https://images.unsplash.com/photo-1480365720180-945d31112159?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
+부트스트랩을 사용할때 m-3, px-2 같은 클래스를 써서 마진또는 패딩을 준다.
+
+html 에서 말고 scss 에서 믹스인 형식으로 @include m(3); 요렇게 쓰고 싶을 때 아래 scss 파일을 적당히 임포트 시켜서 쓰면된다.
+
 ## \_mixins.scss
 
 ```scss

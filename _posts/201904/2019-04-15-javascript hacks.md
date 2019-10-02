@@ -7,6 +7,8 @@ image: https://picsum.photos/2000/1200?image=837
 image-sm: https://picsum.photos/500/300?image=837
 ---
 
+Javascript 여러가지 유용한 문구들 정리
+
 ## 배열 복사하기
 
 ```javascript

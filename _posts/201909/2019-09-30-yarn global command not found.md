@@ -8,7 +8,9 @@ image: https://images.unsplash.com/photo-1506813713591-56fc5e539b80?crop=entropy
 image-sm: https://images.unsplash.com/photo-1506813713591-56fc5e539b80?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
-yarn global 로 패키지 설치 후 명령어를 실행할때 command not found 라면서 실행이 않되는 경우
+yarn 을 사용해 global 로 패키지 설치 후 설치한 패키지를 커맨드창에서 실행했을때 명령어를 찾을 수 없다면서 command not found 에러가 나는 경우가 있다.
+
+npm i -g 와는 다르게 yarn 을 추가적으로 설정이 살짝 필요하다.
 
 ## .bashrc 수정
 

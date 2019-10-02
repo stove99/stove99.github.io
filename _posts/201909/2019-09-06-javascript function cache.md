@@ -7,7 +7,7 @@ image: https://images.unsplash.com/photo-1535406148013-5806f2127f58?crop=entropy
 image-sm: https://images.unsplash.com/photo-1535406148013-5806f2127f58?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
-수행시간이 오래 걸리는 함수를 캐시해서 수행시간을 줄여보자
+스프링에서 쓰던 캐시처럼 자바스크립트에서도 수행시간이 오래 걸리는 함수를 캐시해서 수행시간을 줄여보자.
 
 ## 캐시되는 함수 생성함수
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'JAVA : SpringBoot 어플리케이션 heroku 에 올리기'
-date: 2019-08-07
 keywords: 'SpringBoot, heroku'
 categories: java
 tags: java springboot

@@ -7,6 +7,8 @@ image: https://images.unsplash.com/photo-1561399250-9d86b9ee228c?crop=entropy&cs
 image-sm: https://images.unsplash.com/photo-1561399250-9d86b9ee228c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
+CentOS 에서 Let's Encrypt 인증서를 받아서 nginx 서버에 적용시켜 봅시다~
+
 ## YUM epel 저장소 추가
 
 ```bash

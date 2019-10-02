@@ -7,7 +7,9 @@ image: https://picsum.photos/2000/1200?image=1026
 image-sm: https://picsum.photos/500/300?image=1026
 ---
 
-## 결과물
+뽓뽓뽓 배너가 돌아가는것을 맨들어 봅시다.
+
+## 결과물
 
 <script async src="//jsfiddle.net/stove/4ztyfgpe/embed/result/dark/"></script>
 

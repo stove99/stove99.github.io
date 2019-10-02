@@ -7,7 +7,7 @@ image: https://images.unsplash.com/photo-1444483911532-30de7b1b0aaf?crop=entropy
 image-sm: https://images.unsplash.com/photo-1444483911532-30de7b1b0aaf?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
-glob 패키지를 사용하면 쉽게 문제를 해결할 수 있다.
+특정 위치에서 하위 디렉토리를 포함해 특정 패턴의 파일 목록을 조회하고자 할때 glob 패키지를 사용하면 쉽게 문제를 해결할 수 있다.
 
 ## 설치
 

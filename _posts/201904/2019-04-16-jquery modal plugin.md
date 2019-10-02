@@ -8,6 +8,8 @@ image: https://picsum.photos/2000/1200?image=1011
 image-sm: https://picsum.photos/500/300?image=1011
 ---
 
+jQuery Modal Plugin 팝업창 띄우기 예제
+
 ## 소개
 
 -   [jquery-modal](https://github.com/kylefox/jquery-modal) 플러그인 사용
@@ -128,8 +130,7 @@ $.popup({
     </style>
 
     <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi voluptatem iusto beatae sequi ex quam tempora laboriosam facere, facilis nulla nostrum impedit ducimus, porro quasi quos,
-        itaque optio corporis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi voluptatem iusto beatae sequi ex quam tempora laboriosam facere, facilis nulla nostrum impedit ducimus, porro quasi quos, itaque optio corporis.
     </p>
 
     <div class="text-center">

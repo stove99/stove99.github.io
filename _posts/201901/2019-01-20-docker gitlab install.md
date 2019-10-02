@@ -7,6 +7,8 @@ image: https://picsum.photos/2000/1200?image=924
 image-sm: https://picsum.photos/500/300?image=924
 ---
 
+Docker 로 Gitlab을 간편히 설치해 봅시다.
+
 ## 이미지 가져오기 및 실행하기
 
 http 는 8181 포트로 https 는 8182 포트로 ssh 접속은 8183 포트로 설정

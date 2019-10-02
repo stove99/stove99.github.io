@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'heroku 에 일반 html 사이트 올리기'
-date: 2019-08-08
 keywords: 'static html, heroku'
 categories: etc
 image: https://images.unsplash.com/photo-1553683982-bf97c72e4a1c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000

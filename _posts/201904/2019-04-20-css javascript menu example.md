@@ -8,6 +8,8 @@ image: https://picsum.photos/2000/1200?image=1010
 image-sm: https://picsum.photos/500/300?image=1010
 ---
 
+CSS & Javascript 로 메뉴를 맹글어 보자.
+
 ## 맨들어본 결과물 미리보기
 
 <script async src="//jsfiddle.net/stove/ersc65u0/embed/result/dark/"></script>
@@ -132,27 +134,20 @@ image-sm: https://picsum.photos/500/300?image=1010
                 <li>
                     <a href="#">메뉴1</a>
                     <div>
-                        <p>
-                            <a href="#">메뉴1 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
-                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
-                        </p>
+                        <p><a href="#">메뉴1 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!</p>
                     </div>
                 </li>
                 <li>
                     <a href="#">메뉴2</a>
                     <div>
-                        <p>
-                            <a href="#">메뉴2 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam
-                            quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
-                        </p>
+                        <p><a href="#">메뉴2 ipsum dolor, </a> sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!</p>
                     </div>
                 </li>
                 <li>
                     <a href="#">메뉴3</a>
                     <div>
                         <p>
-                            메뉴3 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴3 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -160,8 +155,7 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴4</a>
                     <div>
                         <p>
-                            메뉴4 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴4 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -169,8 +163,7 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴5</a>
                     <div>
                         <p>
-                            메뉴5 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴5 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>
@@ -178,8 +171,7 @@ image-sm: https://picsum.photos/500/300?image=1010
                     <a href="#">메뉴6</a>
                     <div>
                         <p>
-                            메뉴6 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum
-                            blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
+                            메뉴6 ipsum dolor, sit amet consectetur adipisicing elit. Officia animi ad laborum dolorem, totam, repellendus, minus laboriosam quas temporibus magnam quod aperiam illum blanditiis ratione ipsa dignissimos explicabo quisquam iusto!
                         </p>
                     </div>
                 </li>

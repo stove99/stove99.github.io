@@ -8,6 +8,8 @@ image: https://picsum.photos/2000/1200?image=1042
 image-sm: https://picsum.photos/500/300?image=1042
 ---
 
+Thymeleaf 로 URL 처리하는 방법 정리
+
 ## sample 용 model 에 있는 board object
 
 ```json

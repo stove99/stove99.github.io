@@ -7,7 +7,7 @@ image: https://images.unsplash.com/photo-1476722817135-8d33bf111a0c?crop=entropy
 image-sm: https://images.unsplash.com/photo-1476722817135-8d33bf111a0c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
 
-웹으로 채팅 기능 구현할때 메시지가 오면 메시지 출력하고 스크롤을 제일 하단으로 움직여 보자
+웹으로 채팅 기능 구현할때 메시지가 오면 메시지 출력하고 스크롤을 뽓 하단으로 움직이게 맹글어 보자.
 
 ## html
 
