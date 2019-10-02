@@ -1,7 +1,5 @@
 ---
-layout: compress
 ---
-
 {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 {% assign color = site.color | default:'#5ff656b' %}
@@ -25,10 +23,13 @@ layout: compress
 {% if page.color %}{% assign color = page.color %}{% endif %}
 {% if page.image %}{% assign image = page.image %}{% endif %}
 
-<head>
-  {% include head.html %}
-</head>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        {% include head.html %}
+    </head>
 
-<body>
-  {% include body.html %}
-</body>
+    <body>
+        {% include body.html %}
+    </body>
+</html>
