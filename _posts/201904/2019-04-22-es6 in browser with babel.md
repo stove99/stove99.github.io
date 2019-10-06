@@ -100,3 +100,14 @@ console.log(`my name is ${stove.name}`); // my name is 홍길동
 ```
 
 IE에서 테스트 해 본 결과 IE9까지는 깔꼼하게 잘되는 것 같다. 끝.
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>

@@ -90,3 +90,14 @@ Winodws Docker 는 Shared Drive 설정을 해 줘야 한다. 그리고 파일 �
 docker 가 이미 설치되 있다면 docker-compose.yml 파일만 만들어서 docker-compose up 만 하면 순식간에 로컬에다 훌로구를 띄울 수 있다.
 
 나만 몰랐던 참 편한 세상이다.
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>

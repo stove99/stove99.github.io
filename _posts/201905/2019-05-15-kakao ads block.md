@@ -14,3 +14,14 @@ image-sm: https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2
 설정 > Google > 광고 > 광고 맞춤설정 선택 해제 체크
 
 <img src="/assets/attach/201905/kakao.jpg" style="max-width:500px">
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>

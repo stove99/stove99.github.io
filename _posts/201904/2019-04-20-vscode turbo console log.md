@@ -45,3 +45,14 @@ Turbo Console Log 확장은 콘솔 로그 문장을 생성해 주는 vscode 확�
 ## 생성된 console.log 들을 소스에서 일괄 삭제 한다 : shift + alt +d
 
 <img src="https://camo.githubusercontent.com/b07b5b62158308ed93921260ff4b4083f919e124/68747470733a2f2f696d6167652e6962622e636f2f6a76395574552f64656c6574655f616c6c5f6c6f675f6d657373616765732e676966" style="max-width:600px">
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7073298118440059"
+     data-ad-slot="8400970402"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
