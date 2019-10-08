@@ -8,10 +8,10 @@ tags: javascript angular
 
 angular 기반 ionic 에서 다음 우편번호 서비스를 땡겨다 써 보자
 
-버전은 다음과 같다.
+사용한 ionic, angular 버전은 다음과 같다.
 
--   angular : 8.1.2
 -   ionic : 5.4.2
+-   angular : 8.1.2
 
 ## postcode.js
 
@@ -33,7 +33,7 @@ before.parentNode.insertBefore(script, before);
  *
  * @param {@angular/core/Renderer2} renderer
  * @param {@angular/core/ElementRef.nativeElement} elem
- * @param {주소선택완료 콜백} callback
+ * @param {주소선택완료시 콜백} callback
  */
 export function postcode(renderer, elem, callback) {
     new daum.Postcode({
@@ -57,8 +57,10 @@ export function postcode(renderer, elem, callback) {
     renderer.setStyle(elem, 'width', width + 'px');
     renderer.setStyle(elem, 'height', height + 'px');
     renderer.setStyle(elem, 'border', borderWidth + 'px solid');
-    renderer.setStyle(elem, 'left', ((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth + 'px');
-    renderer.setStyle(elem, 'top', ((window.innerHeight || document.documentElement.clientHeight) - height) / 2 - borderWidth + 'px');
+    renderer.setStyle(elem, 'left',
+        ((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth + 'px');
+    renderer.setStyle(elem, 'top',
+        ((window.innerHeight || document.documentElement.clientHeight) - height) / 2 - borderWidth + 'px');
 }
 ```
 
@@ -100,7 +102,9 @@ ts 파일에서 접근할 수 있게 #daum_popup 추가
 </ion-content>
 
 <div #daum_popup style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
-    <img (click)="closeDaumPopup()" src="//t1.daumcdn.net/postcode/resource/images/close.png" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" />
+    <img (click)="closeDaumPopup()"
+        src="//t1.daumcdn.net/postcode/resource/images/close.png"
+        style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" />
 </div>
 ```
 
