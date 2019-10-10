@@ -57,10 +57,8 @@ export function postcode(renderer, elem, callback) {
     renderer.setStyle(elem, 'width', width + 'px');
     renderer.setStyle(elem, 'height', height + 'px');
     renderer.setStyle(elem, 'border', borderWidth + 'px solid');
-    renderer.setStyle(elem, 'left',
-        ((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth + 'px');
-    renderer.setStyle(elem, 'top',
-        ((window.innerHeight || document.documentElement.clientHeight) - height) / 2 - borderWidth + 'px');
+    renderer.setStyle(elem, 'left', ((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth + 'px');
+    renderer.setStyle(elem, 'top', ((window.innerHeight || document.documentElement.clientHeight) - height) / 2 - borderWidth + 'px');
 }
 ```
 
@@ -102,9 +100,7 @@ ts 파일에서 접근할 수 있게 #daum_popup 추가
 </ion-content>
 
 <div #daum_popup style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
-    <img (click)="closeDaumPopup()"
-        src="//t1.daumcdn.net/postcode/resource/images/close.png"
-        style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" />
+    <img (click)="closeDaumPopup()" src="//t1.daumcdn.net/postcode/resource/images/close.png" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" />
 </div>
 ```
 
@@ -132,7 +128,7 @@ export class DaumSamplePage implements OnInit {
     constructor(private formBuilder: FormBuilder, private renderer: Renderer2) {}
 
     ngOnInit() {
-        this.applyForm = this.formBuilder.group({
+        this.frm = this.formBuilder.group({
             addr1: [''],
             addr2: ['']
         });
@@ -140,7 +136,7 @@ export class DaumSamplePage implements OnInit {
 
     openDaumPopup() {
         postcode(this.renderer, this.popup.nativeElement, data => {
-            this.applyForm.controls.addr1.setValue(data.address);
+            this.frm.controls.addr1.setValue(data.address);
             console.log(data);
             /*
                 {
