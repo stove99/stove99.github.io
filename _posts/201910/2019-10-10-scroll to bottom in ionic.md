@@ -71,36 +71,36 @@ import io from 'socket.io-client';
 @Component({
     selector: 'chat-view',
     templateUrl: './chat.view.page.html',
-    styleUrls: ['./chat.view.page.scss'],
+    styleUrls: ['./chat.view.page.scss']
 })
 export class ChatsViewPage implements OnInit, AfterViewInit {
-    private messages: any[] = [];
     private socket: any;
-    private send_msg: string;
+    messages: any[] = [];
+    send_msg: string;
 
     // ion-content 참조
     @ViewChild(IonContent, { read: IonContent, static: true }) conent: IonContent;
 
-    constructor(private route: ActivatedRoute) { }
+    constructor(private route: ActivatedRoute) {}
 
     ngOnInit() {
         this.socket = io(`${env.socket_url}/chat`, {
             query: {
                 // 소켓 연결할때 인증처리를 위해 요렇게 jwt token 추가로 넘길수 있음.
                 access_token: localStorage.getItem('access_token')
-            },
+            }
         });
 
         // 소켓 연결성공
         this.socket.on('connect', () => {
             console.log('Connected');
             this.socket.emit('join', {
-                to: 'stove99',
+                to: 'stove99'
             });
         });
 
         // 메시지 수신시 화면에 반영하고 스크롤 제일 하단으로...
-        this.socket.on('chat message', (data) => {
+        this.socket.on('chat message', data => {
             this.messages.push(data);
             this.scrollToBottom();
         });
@@ -121,12 +121,11 @@ export class ChatsViewPage implements OnInit, AfterViewInit {
         this.socket.emit('chat message', {
             name: '테스트',
             to: 'stove99',
-            msg: this.send_msg,
+            msg: this.send_msg
         });
 
         this.send_msg = '';
     }
-
 }
 ```
 
@@ -146,15 +145,7 @@ export class ChatsViewPage implements OnInit, AfterViewInit {
 server side 는 nestjs 로 간단하게 만들어 보았다. 실제로 쓸려면 고칠건 많다.
 
 ```typescript
-import {
-    SubscribeMessage,
-    WebSocketGateway,
-    WebSocketServer,
-    WsResponse,
-    OnGatewayInit,
-    OnGatewayConnection,
-    OnGatewayDisconnect,
-} from '@nestjs/websockets';
+import { SubscribeMessage, WebSocketGateway, WebSocketServer, WsResponse, OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
 import { Logger, UseGuards } from '@nestjs/common';
 import { WsGuardGuard } from '../../common/auth/ws.guard.guard';
@@ -171,7 +162,7 @@ export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
     join(socket: Socket, data: any): WsResponse<any> {
         // room에 join한다
 
-        const room = [data.user.id, data.to].sort().join("-");
+        const room = [data.user.id, data.to].sort().join('-');
         socket.join(room);
 
         return { event: 'room created', data: { room } };
@@ -181,7 +172,7 @@ export class ChatGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
     async message(socket: Socket, data: any): Promise<WsResponse<any>> {
         this.logger.log(`message from client: ${data}`);
 
-        const room = [data.user.id, data.to].sort().join("-");
+        const room = [data.user.id, data.to].sort().join('-');
         socket = socket.join(room).to(room);
         socket.emit('chat message', data);
 
@@ -218,13 +209,9 @@ import * as config from 'config';
 export class WsGuardGuard implements CanActivate {
     private logger: Logger = new Logger('WsGuardGuard');
 
-    canActivate(
-        context: ExecutionContext,
-    ): boolean | Promise<boolean> | Observable<boolean> {
+    canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {
         try {
-            const user = jwt.verify(
-                context.switchToWs().getClient().handshake.query.access_token,
-                config.get('JWT_SECRET'));
+            const user = jwt.verify(context.switchToWs().getClient().handshake.query.access_token, config.get('JWT_SECRET'));
 
             context.switchToWs().getData().user = user;
             return Boolean(user);

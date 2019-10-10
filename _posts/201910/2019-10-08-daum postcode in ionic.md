@@ -121,7 +121,7 @@ import { postcode } from 'src/assets/js/postcode.js';
     styleUrls: ['./daum.sample.page.scss']
 })
 export class DaumSamplePage implements OnInit {
-    private frm: FormGroup;
+    frm: FormGroup;
 
     @ViewChild('daum_popup', { read: ElementRef, static: true }) popup: ElementRef;
 
