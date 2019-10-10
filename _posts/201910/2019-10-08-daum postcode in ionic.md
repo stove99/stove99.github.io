@@ -3,7 +3,7 @@ layout: post
 title: 'ionic(angular) 에서 다음 우편번호 서비스 땡겨다 쓰기'
 keywords: 'javascript'
 categories: javascript
-tags: javascript angular
+tags: javascript angular ionic
 ---
 
 angular 기반 ionic 에서 다음 우편번호 서비스를 땡겨다 써 보자
