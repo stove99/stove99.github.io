@@ -152,14 +152,3 @@ jQuery를 사용해 div 팝업창을 특정일자 까지 오픈되도록 처리�
 
 </html>
 ```
-
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7073298118440059"
-     data-ad-slot="8400970402"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>

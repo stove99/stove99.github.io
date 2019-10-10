@@ -16,14 +16,3 @@ Javamail 을 사용해 gmail 로 메일을 보낼 때 아이디 암호를 쪽바
 <img src="/assets/attach/201904/gmail1.png" style="max-width:1000px;">
 
 <img src="/assets/attach/201904/gmail2.png" style="max-width:900px;">
-
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7073298118440059"
-     data-ad-slot="8400970402"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
