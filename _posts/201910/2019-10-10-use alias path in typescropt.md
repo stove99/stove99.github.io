@@ -31,7 +31,7 @@ import { AuthService } from '@services/auth.service';
 
 ## 프로젝트 구조
 
-<img src="/assets/attach/201910/vscode-path.png" style="width:900px;">
+<img src="/assets/attach/201910/vscode-path.png" style="width:500px;">
 
 ## tsconfig.app.json
 
