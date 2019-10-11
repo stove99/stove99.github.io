@@ -10,8 +10,10 @@ angular 기반 ionic 에서 다음 우편번호 서비스를 땡겨다 써 보�
 
 사용한 ionic, angular 버전은 다음과 같다.
 
--   ionic : 5.4.2
--   angular : 8.1.2
+version info
+
+-   @ionic/angular : 4.7.1
+-   @angular : 8.1.2
 
 ## postcode.js
 

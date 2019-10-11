@@ -8,8 +8,10 @@ tags: javascript angular ionic
 
 채팅창에서 메시지가 입력됐을때 화면 제일 하단으로 스크롤 하기
 
--   ionic : 5.4.2
--   angular : 8.1.2
+version info
+
+-   @ionic/angular : 4.7.1
+-   @angular : 8.1.2
 
 ## 화면 html
 

@@ -8,6 +8,11 @@ tags: javascript ionic
 
 ionic 4 에서 뒤로가기 버튼을 두번 눌럿을때 앱이 종료되도록 맹글어 보자.
 
+version info
+
+-   @ionic/angular : 4.7.1
+-   @angular : 8.1.2
+
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { Platform, ToastController } from '@ionic/angular';
