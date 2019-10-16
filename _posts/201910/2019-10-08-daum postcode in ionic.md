@@ -185,3 +185,20 @@ export class DaumSamplePage implements OnInit {
     }
 }
 ```
+
+## CLEARTEXT_NOT_PERMITTED 오류나면서 안될때
+
+resources/android/xml/network_security_config.xml 파일편집
+
+domain 항목에 t1.daumcdn.net, postcode.map.daum.net 2개를 추가해 주면 된다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">t1.daumcdn.net</domain>
+        <domain includeSubdomains="true">postcode.map.daum.net</domain>
+    </domain-config>
+</network-security-config>
+```
