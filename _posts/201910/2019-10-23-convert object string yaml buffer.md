@@ -10,7 +10,7 @@ Object 를 string, yaml, buffer 로 변환하기
 
 ## Object <-> String
 
-```javascript
+```js
 const obj = {
     id: 'stove99',
     rel: {
@@ -20,7 +20,9 @@ const obj = {
 
 // object <-> string
 const json_str = JSON.stringify(obj);
+
 console.log(json_str); // {"id":"stove99","rel":{"friends":["hd","er"]}}
+
 console.log(JSON.parse(json_str)); // { id: 'stove99', rel: { friends: [ 'hd', 'er' ] } }
 ```
 
@@ -44,7 +46,7 @@ npm i bson
 yarn add bson
 ```
 
-```javascript
+```js
 import * as bson from 'bson';
 
 const obj = {
@@ -55,7 +57,9 @@ const obj = {
 };
 
 const buf = bson.serialize(obj);
+
 console.log(buf); // <Buffer 41 00 00 00 02 69 64 00 08 ....>
+
 console.log(bson.deserialize(buf)); // { id: 'stove99', rel: { friends: [ 'hd', 'er' ] } }
 ```
 
@@ -68,7 +72,7 @@ npm i yaml
 yarn add yaml
 ```
 
-```javascript
+```js
 import * as yaml from 'yaml';
 
 const obj = {
@@ -79,7 +83,7 @@ const obj = {
 };
 
 const yaml_str = yaml.stringify(obj);
-console.log(yaml_str);
+
 /*
 id: stove99
 rel:
@@ -87,5 +91,7 @@ rel:
     - hd
     - er
 */
+console.log(yaml_str);
+
 console.log(yaml.parse(yaml_str)); // { id: 'stove99', rel: { friends: [ 'hd', 'er' ] } }
 ```
