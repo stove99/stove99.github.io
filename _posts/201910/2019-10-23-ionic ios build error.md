@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'ionic ios build 시 Cannot read property 'toLowerCase' of undefined 오류'
+title: 'ionic ios build 시 Cannot read property toLowerCase of undefined 오류'
 keywords: 'javascript'
 categories: javascript
 tags: javascript ionic
