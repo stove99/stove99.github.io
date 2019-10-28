@@ -12,6 +12,11 @@ tags: javascript ionic
 
 이런 문제를 해결하기 위해 구글맵 대신에 카카오맵을 사용해 보자.
 
+version info
+
+-   @ionic/angular : 4.7.1
+-   @angular : 8.1.2
+
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
