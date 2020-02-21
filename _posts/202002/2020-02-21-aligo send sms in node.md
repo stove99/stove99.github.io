@@ -44,5 +44,16 @@ const sendSms = ({ receivers, message }) => {
 // 메시지 보내기
 sendSms({ receivers: ['01012341234', '010-4321-4321'], message: '메시지 테스트' }).then((result) => {
     console.log('전송결과', result);
+
+    /*
+    전송결과 {
+        result_code: '1',
+        message: 'success',
+        msg_id: '83819703',
+        success_cnt: 2,
+        error_cnt: 0,
+        msg_type: 'SMS'
+    }
+    */
 });
 ```
