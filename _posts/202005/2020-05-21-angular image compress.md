@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'angular 클라이언트 사이드에서 이미지 사이즈 줄이고 업로드 하기'
+title: '[Angular] 클라이언트 사이드에서 이미지 사이즈 줄이고 업로드 하기'
 keywords: 'javascript'
 categories: javascript
 tags: javascript angular
@@ -166,6 +166,6 @@ constructor 로 NgxImageCompressService 를 주입
     }
 ```
 
-전체 소스는 깃허브(https://github.com/stove99/angular-image-compress-example)에 있어염~~
+전체 소스는 [깃허브](https://github.com/stove99/angular-image-compress-example){:target="\_blank"}에 있어염~~
 
-결과물 : https://stove99.github.io/angular-image-compress-example/
+결과물 : [https://stove99.github.io/angular-image-compress-example/]{:target="\_blank"}
