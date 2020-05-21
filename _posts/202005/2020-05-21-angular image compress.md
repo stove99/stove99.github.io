@@ -168,4 +168,4 @@ constructor 로 NgxImageCompressService 를 주입
 
 전체 소스는 [깃허브](https://github.com/stove99/angular-image-compress-example){:target="\_blank"}에 있어염~~
 
-결과물 : [https://stove99.github.io/angular-image-compress-example/]{:target="\_blank"}
+결과물 : [https://stove99.github.io/angular-image-compress-example/](https://stove99.github.io/angular-image-compress-example/){:target="\_blank"}
