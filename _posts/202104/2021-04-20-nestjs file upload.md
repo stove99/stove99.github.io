@@ -2,8 +2,8 @@
 layout: post
 title: '[NestJS] 파일업로드 & 다운로드 처리(프로젝트 외부 디렉토리에 파일 저장하기)'
 keywords: 'nestjs, Multer, 파일업로드'
-categories: javascript
-tags: javascript nestjs
+categories: nodejs
+tags: nodejs nestjs
 image: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
 image-sm: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
 ---

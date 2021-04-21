@@ -2,8 +2,8 @@
 layout: post
 title: '[NestJS] @nestjs/config ConfigService 로 MongDB 설정하기'
 keywords: 'nestjs, mongo'
-categories: javascript
-tags: javascript nestjs
+categories: nodejs
+tags: nodejs nestjs
 image: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
 image-sm: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
 ---
