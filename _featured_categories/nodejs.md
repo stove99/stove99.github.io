@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Node.js
-slug: node
+slug: nodejs
 menu: true
 submenu: true
 order: 3
