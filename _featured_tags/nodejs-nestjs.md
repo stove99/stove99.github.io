@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: NestJS
-slug: nestjs
+slug: node
 category: nodejs
 menu: false
 order: 1
