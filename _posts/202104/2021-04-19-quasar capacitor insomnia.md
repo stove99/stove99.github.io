@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[Quasar & Capacitor] 화면켜짐 유지하기(Insomnia plugin)'
+title: '[Quasar & Capacitor] 화면켜짐 유지하기(Cordova Insomnia plugin)'
 keywords: 'quasar, capacitor'
 categories: javascript
 tags: javascript vue quasar
