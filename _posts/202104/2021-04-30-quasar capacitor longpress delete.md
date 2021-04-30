@@ -47,7 +47,7 @@ npm i @capacitor/core
 <template>
     <q-page class="flex flex-center">
         <!-- 1.5 초 동안 눌렀을때 removeItem 호출 -->
-        <q-btn v-for="item in items" :key="item.id" color="white" text-color="black" :label="item.name" v-touch-hold:1500.mouse="removeItem(item.id)" />
+        <q-btn v-for="item in items" :key="item.id" v-touch-hold:1500.mouse="removeItem(item.id)" color="primary" :label="item.name" />
     </q-page>
 </template>
 
