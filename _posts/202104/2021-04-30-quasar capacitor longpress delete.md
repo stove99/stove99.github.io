@@ -37,7 +37,7 @@ npm i @capacitor/core
 
 ## 참고 소스
 
-(quasar 문서)[https://quasar.dev/vue-directives/touch-hold]에서는 길게 눌러서 실행하는 함수 호출시 파라메터를 같이 넘기는 예제가 없었다.
+[quasar 문서](https://quasar.dev/vue-directives/touch-hold)에서는 길게 눌러서 실행하는 함수 호출시 파라메터를 같이 넘기는 예제가 없었다.
 
 늘 하던데로 함수 호출시 파라메터를 넘기니 이상하게 동작했다. 찾아보니 대상 호출 함수를 참고 소스 처럼 함수를 리턴하게 작성하면 된다.
 
