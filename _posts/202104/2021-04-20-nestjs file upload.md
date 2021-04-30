@@ -31,8 +31,6 @@ ATTACH_SAVE_PATH=c:\file\cms
 
 NestJs config 설정을 해준다. [NestJs config 설정방법](https://stove99.github.io/javascript/2021/04/15/nestjs-mongo-setting-with-config-service/)은 요글 참고.
 
-※ c:\file\cms 경로는 미리 폴더가 생성되 있어야 된다.
-
 common/file.moudle.ts은 다음과 같다.
 
 ```typescript
@@ -62,7 +60,7 @@ import * as fs from 'fs';
                         const dest = `${config.get('ATTACH_SAVE_PATH')}/${format(new Date(), '{yyyy}{MM}')}/`;
 
                         if (!fs.existsSync(dest)) {
-                            fs.mkdirSync(dest);
+                            fs.mkdirSync(dest, { recursive: true });
                         }
 
                         cb(null, dest);
