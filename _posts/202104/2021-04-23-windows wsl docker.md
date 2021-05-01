@@ -23,7 +23,9 @@ Microsoft Store 에 가서 Ubuntu 를 검색하면 여러개 나오는데 최신
 
 <img src="/assets/attach/202104/wsl2_03.png">
 
-## WSL2  활성화
+## WSL2 활성화
+
+[Linux 커널 업데이트 패키지](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)를 다운로드 후 설치한다.
 
 powershell 을 검색해서 관리자 권한으로 실행한다.
 
