@@ -12,7 +12,7 @@ image-sm: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwx
 
 ## Chat.vue
 
-```vue
+```html
 <template>
     <div>
         <button @click="addMessage">메시지 추가</button>

@@ -34,7 +34,7 @@ npm i @ionic-native/core clovelced-plugin-audiomanagement @ionic-native/audio-ma
 
 ## vue 에서 플러그인 사용하기
 
-```vue
+```html
 <template>
     <q-page class="flex flex-center">
         {{ voloume }}

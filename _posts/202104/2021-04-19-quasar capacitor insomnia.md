@@ -34,7 +34,7 @@ npm i @ionic-native/core cordova-plugin-insomnia @ionic-native/insomnia
 
 ## vue 에서 플러그인 사용하기
 
-```vue
+```html
 <template>
     <q-page class="flex flex-center"> 화면 꺼짐 방지 </q-page>
 </template>

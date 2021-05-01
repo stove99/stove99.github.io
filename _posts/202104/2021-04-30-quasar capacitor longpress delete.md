@@ -43,7 +43,7 @@ npm i @capacitor/core
 
 ※ 리턴하는 함수 작성시 function() 으로 선언하지 말고 arrow function을 써야 컴포넌트 내부 data 를 접근해서 변경할 수 있다.
 
-```vue
+```html
 <template>
     <q-page class="flex flex-center">
         <!-- 1.5 초 동안 눌렀을때 removeItem 호출 -->
