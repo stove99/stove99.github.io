@@ -34,13 +34,15 @@ q-date 에서 뭔가를 선택하는 이벤트가 input 이고 input 이벤트�
                         transition-hide="scale"
                     >
                         <q-date
-                            minimal
+                            ref="calendar"
                             emit-immediately
+                            years-in-month-view
                             default-view="Months"
                             v-model="selectedMonth"
                             @input="checkSelected"
                             mask="YYYY/MM"
-                            :years-in-month-view="true"
+                            subtitle="년/월 선택"
+                            :title="`${selectedMonth}`"
                         />
                     </q-popup-proxy>
                 </q-icon>
@@ -63,6 +65,10 @@ export default {
         checkSelected(_, reason, __) {
             if (reason === "month") {
                 this.$refs.monthPicker.hide();
+            } 
+            // 년도 선택시 달 선택 화면으로 이동
+            else if (reason === "year") {
+                this.$refs.calendar.setView("Months");
             }
         }
     },
