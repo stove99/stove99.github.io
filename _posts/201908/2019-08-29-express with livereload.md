@@ -2,7 +2,8 @@
 layout: post
 title: '[Node.js] express 에 live reload 적용하기'
 keywords: 'node, express, livereload'
-categories: node
+categories: nodejs
+tags: nodejs nodejs_etc
 image: https://images.unsplash.com/photo-1507546530-14a03f8d180a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1507546530-14a03f8d180a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---

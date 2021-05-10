@@ -2,8 +2,8 @@
 layout: post
 title: '[Node.js] 알리고 SMS 메시지 보내기 예제'
 keywords: 'node, aligo'
-categories: node
-tags: node
+categories: nodejs
+tags: nodejs node_etc
 image: https://images.unsplash.com/photo-1529436916121-28a9a43d4fc9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1529436916121-28a9a43d4fc9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=400
 ---

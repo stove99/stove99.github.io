@@ -2,7 +2,8 @@
 layout: post
 title: 'Node.js 운영/개발 환경별 프로퍼티 설정하기'
 keywords: 'Node.js'
-categories: node
+categories: nodejs
+tags: nodejs nodejs_etc
 image: https://picsum.photos/2000/1200?image=1033
 image-sm: https://picsum.photos/500/300?image=1033
 ---

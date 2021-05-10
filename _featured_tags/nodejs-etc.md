@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: ETC
-slug: node_etc
+slug: nodejs_etc
 category: nodejs
 menu: false
 order: 2

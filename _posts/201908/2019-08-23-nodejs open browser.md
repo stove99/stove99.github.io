@@ -2,7 +2,8 @@
 layout: post
 title: '[Node.js] express 서버가 실행될때 브라우저로 원하는 url 열기'
 keywords: 'node, opn, express'
-categories: node
+categories: nodejs
+tags: nodejs nodejs_etc
 image: https://images.unsplash.com/photo-1560747144-493e3754fa12?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 image-sm: https://images.unsplash.com/photo-1560747144-493e3754fa12?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1200&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2000
 ---
