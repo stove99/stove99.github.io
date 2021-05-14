@@ -91,7 +91,8 @@ export default {
 
     computed: {
         component() {
-            return () => import(`../components/${this.tab}`);
+            const tab = this.tab;
+            return () => import(`../components/${tab}`);
         }
     },
 
