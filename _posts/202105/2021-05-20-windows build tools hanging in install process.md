@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'npm 또는 yarn 으로 windows-build-tools 설치시 멈춰서 가만 있을때'
+title: 'npm 또는 yarn 으로 windows-build-tools 설치 시 멈춰서 진행이 안 될 때'
 keywords: 'nestjs, windows-build-tools'
 categories: nodejs
 tags: nodejs
