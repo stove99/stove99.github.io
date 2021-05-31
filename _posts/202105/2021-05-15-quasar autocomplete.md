@@ -36,6 +36,7 @@ vue 에서 한글 입력시 model 에 바로바로 반영이 안된다. 검색�
                 :options="options"
                 @input.native="filter($event.target.value)"
                 @filter="filterFn"
+                @input-value="setValue"
                 hide-dropdown-icon
                 style="width: 250px; padding-bottom: 32px"
                 new-value-mode="add-unique"
@@ -67,6 +68,10 @@ vue 에서 한글 입력시 model 에 바로바로 반영이 안된다. 검색�
         },
 
         methods: {
+            setValue(value){
+                this.model = value;
+            },
+
             filter(keyword) {
                 this.$refs.sample.filter(keyword);
                 this.model = keyword;
