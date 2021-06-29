@@ -40,7 +40,7 @@ v2 로 바뀌면서 @input 가 없어지고 @update:model-value 로 변경되서
                 // ref 로 native element 를 가져와서 input 이벤트가 발생할때 model 에 연결된 변수에 값을 저장한다.
                 const el = keywordRef.value.getNativeElement();
                 el.addEventListener('input', (e) => {
-                    query.value = e.data;
+                    keyword.value = e.target.value;
                 });
             });
 
