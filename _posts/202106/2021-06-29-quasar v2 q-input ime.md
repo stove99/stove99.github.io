@@ -22,8 +22,8 @@ v2 로 바뀌면서 @input 가 없어지고 @update:model-value 로 변경되서
 <template>
     <q-page class="flex flex-center">
         <q-input ref="keywordRef" :model-value="keyword" label="검색어입력" />
-        keyword : {{ keyword }}</q-page
-    >
+        keyword : \{{ keyword }}
+    </q-page>
 </template>
 
 <script>
