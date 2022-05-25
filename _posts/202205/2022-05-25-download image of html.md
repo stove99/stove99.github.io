@@ -8,7 +8,7 @@ image: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwxMjA
 image-sm: https://images.unsplash.com/photo-1533376351882-bdcabed9b281?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
 ---
 
-html2canvas 라이브러리로 html 특정 영역을 canvas 로 그린다음 canvas 를 png 파일로 다운로드 하는 예제
+html2canvas 라이브러리로 html 특정 영역을 canvas로 그린 다음 canvas 이미지를 png 파일로 다운로드 하는 예제
 
 ## 소스코드
 
@@ -57,6 +57,7 @@ html2canvas 라이브러리로 html 특정 영역을 canvas 로 그린다음 can
             };
 
             const download = (canvas, filename) => {
+                console.log(filename);
                 var link = document.createElement('a');
                 link.download = filename;
                 link.href = canvas.toDataURL();
@@ -64,10 +65,10 @@ html2canvas 라이브러리로 html 특정 영역을 canvas 로 그린다음 can
             };
 
             document.querySelector('#download-btn').addEventListener('click', async () => {
-                const div = document.querySelector('#capture');
-                const canvas = await getScreenshotOfElement(div, 'screenshot.png');
+                const target = document.querySelector('#capture');
+                const canvas = await getScreenshotOfElement(target);
 
-                download(canvas);
+                download(canvas, 'screenshot.png');
             });
         </script>
     </body>
