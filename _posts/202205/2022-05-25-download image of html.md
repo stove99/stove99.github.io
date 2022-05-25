@@ -57,8 +57,8 @@ html2canvas 라이브러리로 html 특정 영역을 canvas로 그린 다음 can
             };
 
             const download = (canvas, filename) => {
-                console.log(filename);
-                var link = document.createElement('a');
+                const link = document.createElement('a');
+
                 link.download = filename;
                 link.href = canvas.toDataURL();
                 link.click();
